@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient( #006FDB 0%, #955bf4 100%);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Navegação */
@@ -62,7 +67,7 @@ nav ul li:first-child {
 }
 
 .download-btn a:hover {
-    background: #764ba2;
+    background: #ffffff;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
@@ -78,23 +83,65 @@ nav ul li:first-child {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 50px;
     min-height: 100vh;
     text-align: center;
     color: white;
     animation: fadeIn 1s ease-in;
+    position: relative;
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.hero-content p.title {
+    text-align: left;
+    padding-left: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content p {
+.hero-content p.subtitle {
+    text-align: left;
+    padding-left: 10%;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
     opacity: 0.9;
+}
+
+.hero-content p.name {
+    text-align: left;
+    padding-left: 10%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.name {
+    background: linear-gradient(
+        45deg,
+        #ffffff 0%,
+        #ffffff 45%,
+        #d0d0d0c0 50%,
+        #ffffff 55%,
+        #ffffff 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: wave-flow 15s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes wave-flow {
+    0% {
+        background-position: 200% 0;
+    }
+    50% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
 }
 
 .hero-links {
@@ -123,6 +170,71 @@ nav ul li:first-child {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Decorações flutuantes do Hero */
+.hero::before {
+    content: '';
+    position: absolute;
+    right: -300px;
+    top: -200px;
+    width: 800px;
+    height: 800px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 45% 55% 60% 40%;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    right: -400px;
+    top: 100px;
+    width: 900px;
+    height: 900px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 60% 40% 50% 50%;
+    z-index: 1;
+    animation: floatHERO 8s ease-in-out infinite reverse;
+}
+
+@keyframes floatHERO {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(10deg); }
+}
+
+/* Decorações SVG do Hero */
+.hero-decoration {
+    position: absolute;
+    top: 80px;
+    right: -10px;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from {
+       transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-circle-svg {
+     stroke: white;
+     stroke-width: 25;
+     stroke-linecap: round;
+     stroke-linejoin: round;
+     opacity: 0.5;
+}
+
+/* Grupos de órbita com planetas */
+.orbit-group {
+  transform-origin: 1800px 1500px;
+}
+
 /* Seção Tecnologias */
 .hero-tech {
     display: block;
@@ -138,7 +250,7 @@ nav ul li:first-child {
 }
 
 .hero-marquee-infinity {
-    --gap: 20px;
+    --gap: 40px;
     display: flex;
     gap: var(--gap);
     overflow: hidden;
@@ -178,14 +290,16 @@ nav ul li:first-child {
 }
 
 .tech-item {
-    display: inline-block;
-    width: 150px;
-    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 3px;
     color: #667eea;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     white-space: nowrap;
     box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
     transition: all 0.3s ease;
@@ -195,8 +309,12 @@ nav ul li:first-child {
 .tech-item:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background: #667eea;
-    color: white;
+    transform: translateY(-4px);
+}
+
+.tech-img {
+    width: 30px;
+    height: 30px;
 }
 
 .hero-marquee-infinity:hover .tech-list {
@@ -207,100 +325,6 @@ nav ul li:first-child {
     to {
         transform: translateX(calc(-100% - var(--gap)));
     }
-}
-
-/* Seção Educação */
-.education {
-    background: white;
-    padding: 4rem 0;
-    margin: 4rem 0;
-    border-radius: 10px;
-}
-
-.education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.education-card {
-    background: #f8f9ff;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid #667eea;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 1.5rem;
-}
-
-.education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
-    border-left-color: #764ba2;
-}
-
-.education-card.degree {
-    border-left-color: #667eea;
-    background: linear-gradient(135deg, #f8f9ff 0%, #f0f3ff 100%);
-}
-
-.education-card.degree:hover {
-    border-left-color: #764ba2;
-    background: linear-gradient(135deg, #f0f3ff 0%, #e8ecff 100%);
-}
-
-.education-card.certification {
-    border-left-color: #764ba2;
-}
-
-.education-card.course {
-    border-left-color: #667eea;
-}
-
-.education-icon {
-    font-size: 2.5rem;
-    min-width: 60px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.education-content {
-    flex: 1;
-}
-
-.education-content h3 {
-    color: #667eea;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.education-institution {
-    color: #764ba2;
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-bottom: 0.3rem;
-}
-
-.education-period {
-    background: #667eea;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
-.education-description {
-    color: #666;
-    line-height: 1.6;
-    font-size: 0.95rem;
-    margin: 0;
 }
 
 /* Seção Sobre */
@@ -315,13 +339,23 @@ nav ul li:first-child {
 .education h2,
 .projects h2,
 .skills h2,
-.contact h2 {
+.contact h2,
+.experience h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #667eea;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    
+    background: linear-gradient(
+        90deg,
+        #000000 0%,
+        #667eea 50%,
+        #ffffff 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
-
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -332,6 +366,72 @@ nav ul li:first-child {
 .about-text p {
     margin-bottom: 1rem;
     line-height: 1.8;
+}
+
+/* Conteúdo expansível individual de parágrafos */
+.about-expandable-item {
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    position: relative;
+}
+
+.about-expandable-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.95));
+    pointer-events: none;
+    transition: opacity 0.4s ease-out;
+}
+
+/* Quando expandido, remove o gradiente */
+.about-expandable-item.expanded {
+    max-height: 1000px;
+    transition: max-height 0.6s ease-in;
+}
+
+.about-expandable-item.expanded::after {
+    opacity: 0;
+}
+
+/* Botão de expandir individual com seta para baixo */
+.expand-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.expand-btn::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #000000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.expand-btn:hover::after {
+    border-top-color: #000000bb;
+}
+
+.expand-btn.expanded::after {
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
 }
 
 /* Seção Projetos */
@@ -365,6 +465,11 @@ nav ul li:first-child {
     height: 200px;
     overflow: hidden;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease;
 }
 
 .project-image img {
@@ -394,6 +499,7 @@ nav ul li:first-child {
 .project-card h3 {
     color: #667eea;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .project-card p {
@@ -414,6 +520,34 @@ nav ul li:first-child {
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
+}
+
+/* Seção Habilidades */
+.skills {
+    background: white;
+    padding: 4rem 0;
+    margin: 4rem 0;
+    border-radius: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9ff;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.skill-item h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
 }
 
 /* Seção Experiências */
@@ -561,32 +695,98 @@ nav ul li:first-child {
     transform: scale(1.08);
 }
 
-/* Seção Habilidades */
-.skills {
+/* Seção Educação */
+.education {
     background: white;
     padding: 4rem 0;
     margin: 4rem 0;
     border-radius: 10px;
 }
 
-.skills-grid {
+.education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.skill-item {
-    text-align: center;
-    padding: 2rem;
+.education-card {
     background: #f8f9ff;
+    padding: 2rem;
     border-radius: 8px;
-    border: 2px solid #e0e0e0;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 1.5rem;
 }
 
-.skill-item h3 {
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+    border-left-color: #764ba2;
+}
+
+.education-card.degree {
+    border-left-color: #667eea;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f3ff 100%);
+}
+
+.education-card.degree:hover {
+    border-left-color: #764ba2;
+    background: linear-gradient(135deg, #f0f3ff 0%, #e8ecff 100%);
+}
+
+.education-card.certification {
+    border-left-color: #764ba2;
+}
+
+.education-card.course {
+    border-left-color: #667eea;
+}
+
+.education-icon {
+    font-size: 2.5rem;
+    min-width: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-content h3 {
     color: #667eea;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
+}
+
+.education-institution {
+    color: #764ba2;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.education-period {
+    background: #667eea;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.education-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
 }
 
 /* Seção Contato */
@@ -717,5 +917,253 @@ section .container {
 
     .education-icon {
         font-size: 2rem;
+    }
+}
+
+/* Modal de Projeto */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    max-width: 1200px;
+    max-height: 90vh;
+    width: 90%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    display: flex;
+    gap: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-sidebar {
+    flex: 0 0 40%;
+    padding: 2rem;
+    overflow-y: auto;
+    border-right: 1px solid #e0e0e0;
+}
+
+.modal-gallery {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.modal-sidebar h2 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+.modal-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.modal-images img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    margin-inline: auto;
+}
+
+/* Customizar scrollbar */
+.modal-images::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-images::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.modal-images::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+.modal-images::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+.modal-placeholder {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.modal-details {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.modal-section h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.modal-section p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.modal-section ul {
+    color: #666;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.modal-section li {
+    margin-bottom: 0.3rem;
+}
+
+.modal-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.modal-tags .tag {
+    background: #667eea;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.modal-actions {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.modal-actions .btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s;
+    font-size: 0.95rem;
+}
+
+.modal-actions .btn:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Modal Responsivo */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95%;
+        width: 95%;
+        height: 95vh;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-sidebar {
+        flex: 0 0 40%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 1.5rem;
+    }
+
+    .modal-sidebar h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-gallery {
+        flex: 1;
+        padding: 1.5rem;
+    }
+
+    .modal-details {
+        gap: 1rem;
+    }
+
+    .modal-section h3 {
+        font-size: 0.95rem;
+    }
+
+    .modal-section p,
+    .modal-section ul {
+        font-size: 0.9rem;
     }
 }
