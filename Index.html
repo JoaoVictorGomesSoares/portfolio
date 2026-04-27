@@ -58,7 +58,6 @@
                     </ul>
                 </div>
             </div>
-
             <!-- SVG decorativo com órbitas -->
             <svg
                 class="hero-decoration"
@@ -99,9 +98,8 @@
             <h2>Sobre Mim</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Quem sou eu?</h3>
-                    
-                    <div class="about-expandable-item" id="para1">
+                    <h3>Quem sou eu?</h3>                   
+                    <div class="about-expandable-item" id="para1" role="region" aria-hidden="true">
                         <p>
                             Sou um Programador Back-End, possuo experiências em tecnologias como <strong>Java</strong>, <strong>Springboot</strong>, <strong>Git</strong> e <strong>DataBases</strong>, gosto de transformar ideias em soluções práticas e funcionais. Possuo 1,5 anos de experiencia 
                             <br>
@@ -112,10 +110,9 @@
                             Atualmente tenho trabalhado no meu desenvolvimento como um programador Back-End, diariamente estudo novas tecnologias e desenvolvo projetos práticos, quando não estou programando, gosto de contribuir para a comunidade dev e explorar novos frameworks e ferramentas.
                         </p>
                     </div>
-                    <button class="expand-btn" data-target="para1"></button>
-                    
+                    <button class="expand-btn" data-target="para1" aria-expanded="false" aria-controls="para1"></button>                   
                     <h3>O que eu faço?</h3>
-                    <div class="about-expandable-item" id="para2">
+                    <div class="about-expandable-item" id="para2" role="region" aria-hidden="true">
                         <p>
                             Atuo principalmente como Programador <strong>Java</strong> e sou capacitado na construção de <strong>APIs RESTful</strong> robustas, escaláveis e seguras, utilizando <strong>Java</strong> e <strong>Spring Boot</strong> como principais tecnologias. Trabalho com foco em desempenho, manutenibilidade e organização do código, aplicando princípios de arquitetura limpa, solida, em camadas e boas práticas de desenvolvimento.
                             <br>
@@ -126,10 +123,9 @@
                             Além do desenvolvimento, dedico-me à evolução contínua do código e da arquitetura, realizando refatorações, melhorias técnicas e estudos constantes de novas tecnologias e frameworks. Meu objetivo é entregar soluções estáveis, escaláveis e alinhadas às necessidades do usuário final e do negócio.
                         </p>
                     </div>
-                    <button class="expand-btn" data-target="para2"></button>
-
+                    <button class="expand-btn" data-target="para2" aria-expanded="false" aria-controls="para2"></button>
                     <h3>O que eu já fiz?</h3>
-                    <div class="about-expandable-item" id="para3">
+                    <div class="about-expandable-item" id="para3" role="region" aria-hidden="true">
                         <p>
                             Desenvolvi diversas aplicações back-end utilizando <strong>Java</strong> e <strong>Spring Boot</strong>, com foco na criação de <strong>APIs REST</strong> bem estruturadas, seguindo padrões de projeto e boas práticas. Atuei na implementação de endpoints, validações, tratamento de exceções e regras de negócio, garantindo aplicações confiáveis e bem organizadas.
                             <br>
@@ -140,17 +136,11 @@
                             Participei do desenvolvimento de projetos práticos e sistemas completos, utilizando <strong>Git</strong> para versionamento de código e organização do fluxo de desenvolvimento. Essas experiências fortaleceram minha capacidade de resolver problemas, evoluir tecnicamente e aplicar soluções modernas no desenvolvimento <strong>back-end</strong>.                        
                         </p>
                     </div>
-                    <button class="expand-btn" data-target="para3"></button>
-
+                    <button class="expand-btn" data-target="para3" aria-expanded="false" aria-controls="para3"></button>
                     <h3>Idiomas</h3>
-                    <p>
-                        Português (Nativo) | Inglês (Fluente) 
-                    </p>
-
+                    <p> Português (Nativo) | Inglês (Fluente) </p>
                     <h3>Formação Acadêmica</h3>
-                    <p>
-                        Bacharel em Ciência da Computação - Universidade Federal Fluminense (UFF) - 2026-2030
-                    </p>
+                    <p> Bacharel em Ciência da Computação - Universidade Federal Fluminense (UFF) - 2026-2030 </p>
                 </div>
                 <div class="about-image">
                     <img id="avatar" src="assets/avatar1.png" alt="avatar do João Victor">
@@ -159,157 +149,135 @@
         </div>
     </section>
 
-    <!-- Seção Projetos -->
+        <!-- Seção Projetos -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>Meus Projetos</h2>
             <div class="projects-grid">
                 <div class="project-card" data-project-id="1">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares/DEMANDS">
+                    <div class="project-image">
                         <img src="assets/DEMANDS-project-img.png" alt="DEMANDS">
                     </div>
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">Organize tarefas de equipes</h3>
                         <h3 style="font-size: 0.8rem;">DEMANDS</h3>
                         <p>Uma aplicação planejada para auxiliar grandes equipes a organizar demandas, prioridades, prazos e o alinhamento do trabalho.</p>
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="1" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares/DevTrack" target="_blank" class="project-action-btn project-repo-btn" data-project-id="1" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="2">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/GLASSES-project-img.png" alt="GLASSES">
                     </div>
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">E-commerce de Óculos</h3>
                         <h3 style="font-size: 0.8rem;">GLASSES</h3>
                         <p>Um e-commerce de óculos com catálogo de produtos, autenticação de usuário, carrinho de compras e integração com APIs.</p>
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="2" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="2" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="3">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/WallpaperProject.png" alt="Projeto 3">
                     </div>
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">Jogo interativo</h3>
-                        <h3 style="font-size: 0.8rem;">MOTO WHELLING</h3>
-                        <p>Um jogo interativo desenvolvido com Canvas API. Oferece uma experiência divertida e desafiadora com mecânicas bem pensadas.</p>
-                        <div class="tags">
-                            <span class="tag">Canvas</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Game Dev</span>
+                        <h3 style="font-size: 0.8rem;">Stell Fighters</h3>
+                        <p>Um jogo interativo desenvolvido com Java. Oferece uma experiência divertida e desafiadora com mecânicas bem pensadas.</p>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="3" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="3" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="4">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/WallpaperProject.png" alt="Projeto 4">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">Sistema de Autenticação e Autorização </h3>
+                        <h3 style="margin-bottom: 0;">Sistema de Autenticação e Autorização</h3>
                         <h3 style="font-size: 0.8rem;">AUTH SERVER</h3>
                         <p>API responsável por autenticação segura de usuários, utilizando JWT, controle de roles e permissões, seguindo boas práticas de segurança com Spring Security.</p>
-                        <div class="tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">JWT</span>
-                            <span class="tag">Spring Security</span>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="4" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="4" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="5">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/WallpaperProject.png" alt="Projeto 5">
                     </div>
-                        <div class="project-content">
-                            <h3 style="margin-bottom: 0;">API de Controle Financeiro </h3>
-                            <h3 style="font-size: 0.8rem;">CONTA DIGITAL</h3>
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 0;">API de Controle Financeiro</h3>
+                        <h3 style="font-size: 0.8rem;">FINTAB (App de finanças)</h3>
                         <p>API REST para gerenciamento de finanças pessoais, com registro de receitas e despesas, categorização e cálculo automático de saldo.</p>
-                        <div class="tags">
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">JWT</span>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="5" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="5" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="6">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/WallpaperProject.png" alt="Projeto 6">
                     </div>
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">Sistema de Agendamento de Serviços</h3>
-                        <h3 style="font-size: 0.8rem;">AGENDA</h3>
+                        <h3 style="font-size: 0.8rem;">AGENDA (Dentista ou Esteticista)</h3>
                         <p>Backend para agendamento de serviços, com controle de horários disponíveis, validação de conflitos e gerenciamento completo dos agendamentos.</p>
-                        <div class="tags">
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">Scheduler</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Java Mail / SMTP</span>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="6" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="6" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="7">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/WallpaperProject.png" alt="Projeto 7">
                     </div>
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">API de Chat em Tempo Real</h3>
                         <h3 style="font-size: 0.8rem;">CHATREPETECO</h3>
                         <p>Sistema de comunicação em tempo real utilizando WebSocket, permitindo conversas privadas ou em grupo com histórico de mensagens.</p>
-                        <div class="tags">
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Redis</span>
-                            <span class="tag">JWT</span>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="7" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="7" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="8">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/WallpaperProject.png" alt="Projeto 8">
                     </div>
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">Sistema de Notificações (Microserviço)</h3>
                         <h3 style="font-size: 0.8rem;">NOTIFICA</h3>
                         <p>Microserviço para envio de notificações de forma assíncrona, utilizando filas para garantir desempenho, escalabilidade e tolerância a falhas.</p>
-                        <div class="tags">
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">RabbitMQ ou Kafka</span>
-                            <span class="tag">SMTP</span>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="8" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="8" title="Ver repositório no GitHub">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card" data-project-id="9">
-                    <div class="project-image" data-project-link="https://github.com/JoaoVictorGomesSoares">
+                    <div class="project-image">
                         <img src="assets/WallpaperProject.png" alt="Projeto 9">
                     </div>
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">API de Gestão de Usuários e Logs</h3>
                         <h3 style="font-size: 0.8rem;">AUDITORIA</h3>
-                    <p>API corporativa para gerenciamento de usuários com registro de ações, auditoria completa e rastreabilidade das operações do sistema.</p>
-                    <div class="tags">
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">JWT</span>
-                    </div>
+                        <p>API corporativa para gerenciamento de usuários com registro de ações, auditoria completa e rastreabilidade das operações do sistema.</p>
+                        <div class="project-actions">
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="9" title="Ver projeto em produção">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="9" title="Ver repositório no GitHub">Ver repositório</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -435,169 +403,152 @@
         </div>
     </section>
 
-    <!-- Seção Educação -->
+        <!-- Seção Educação -->
     <section id="education" class="education">
         <div class="container">
             <h2>Educação</h2>
             <div class="education-grid">
-                <!-- Bacharelado -->
-                <div class="education-card degree">
+                <div class="education-card degree" data-education-id="1">
                     <div class="education-icon">🎓</div>
                     <div class="education-content">
                         <h3>Bacharelado em Ciência da Computação</h3>
                         <p class="education-institution">📚 Universidade Federal Fluminense (UFF)</p>
                         <p class="education-period">2026 - 2030</p>
-                        <p class="education-description">
-                            Formação completa em Ciência da Computação com ênfase em desenvolvimento de software, algoritmos, estruturas de dados e engenharia de software.
-                        </p>
+                        <p class="education-description">Formação completa em Ciência da Computação com ênfase em desenvolvimento de software, algoritmos, estruturas de dados e engenharia de software.</p>
+                        <button class="education-btn" data-education-id="1">Cursando ...</button>
                     </div>
                 </div>
-
-                <!-- Certificações -->
-                <div class="education-card certification">
+                <div class="education-card certification" data-education-id="2">
                     <div class="education-icon">📜</div>
                     <div class="education-content">
                         <h3>Spring Boot Essentials</h3>
                         <p class="education-institution">🏆 Udemy</p>
                         <p class="education-period">2024</p>
-                        <p class="education-description">
-                            Certificação em desenvolvimento com Spring Boot, cobrindo REST APIs, JPA, Hibernate e padrões de design.
-                        </p>
+                        <p class="education-description">Certificação em desenvolvimento com Spring Boot, cobrindo REST APIs, JPA, Hibernate e padrões de design.</p>
+                        <button class="education-btn" data-education-id="2">Ver certificados</button>
                     </div>
                 </div>
-
-                <div class="education-card certification">
+                <div class="education-card certification" data-education-id="3">
                     <div class="education-icon">📜</div>
                     <div class="education-content">
                         <h3>Java Advanced Programming</h3>
                         <p class="education-institution">🏆 Alura</p>
                         <p class="education-period">2023</p>
-                        <p class="education-description">
-                            Certificação avançada em Java, explorando programação orientada a objetos, collections, streams e multithreading.
-                        </p>
+                        <p class="education-description">Certificação avançada em Java, explorando programação orientada a objetos, collections, streams e multithreading.</p>
+                        <button class="education-btn" data-education-id="3">Ver certificados</button>
                     </div>
                 </div>
-
-                <!-- Cursos -->
-                <div class="education-card course">
+                <div class="education-card course" data-education-id="4">
                     <div class="education-icon">💻</div>
                     <div class="education-content">
                         <h3>Git e GitHub Completo</h3>
                         <p class="education-institution">📚 Udemy</p>
                         <p class="education-period">2023</p>
-                        <p class="education-description">
-                            Curso completo sobre versionamento de código, Git e GitHub, incluindo workflows colaborativos e boas práticas.
-                        </p>
+                        <p class="education-description">Curso completo sobre versionamento de código, Git e GitHub, incluindo workflows colaborativos e boas práticas.</p>
+                        <button class="education-btn" data-education-id="4">Ver certificados</button>
                     </div>
                 </div>
-
-                <div class="education-card course">
+                <div class="education-card course" data-education-id="5">
                     <div class="education-icon">💻</div>
                     <div class="education-content">
                         <h3>SQL e Banco de Dados</h3>
                         <p class="education-institution">📚 Coursera</p>
                         <p class="education-period">2023</p>
-                        <p class="education-description">
-                            Curso abrangente sobre SQL, normalização de dados, design de banco de dados e otimização de queries.
-                        </p>
+                        <p class="education-description">Curso abrangente sobre SQL, normalização de dados, design de banco de dados e otimização de queries.</p>
+                        <button class="education-btn" data-education-id="5">Ver certificados</button>
                     </div>
                 </div>
-
-                <div class="education-card course">
+                <div class="education-card course" data-education-id="6">
                     <div class="education-icon">💻</div>
                     <div class="education-content">
                         <h3>Clean Code e SOLID Principles</h3>
                         <p class="education-institution">📚 Pluralsight</p>
                         <p class="education-period">2024</p>
-                        <p class="education-description">
-                            Curso sobre melhores práticas de programação, padrões de design e princípios SOLID para código limpo e manutenível.
-                        </p>
+                        <p class="education-description">Curso sobre melhores práticas de programação, padrões de design e princípios SOLID para código limpo e manutenível.</p>
+                        <button class="education-btn" data-education-id="6">Ver certificados</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Experiências Profissionais -->
+        <!-- Seção Experiências Profissionais -->
     <section id="experience" class="experience">
         <div class="container">
             <h2>Minha Jornada</h2>
-            <div class="timeline">
-                <div class="timeline-item">
+            <!-- Linha do tempo horizontal para experiências profissionais -->
+            <div class="timeline-horizontal">
+                <!-- Essa div representa a Linha -->
+                <div class="timeline-track"></div>
+                <!-- Cada item representa uma experiência profissional -->
+                <div class="timeline-item" data-experience-id="1">
+                    <button class="timeline-preview" data-experience-id="1">
+                        <span class="timeline-period">2022 - 2023</span>
+                        <strong>Freelancer - Backend</strong>
+                        <small>Empresa X</small>
+                        <p class="timeline-description">Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e Git..</p>
+                    </button>
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Desenvolvedor Back-End</h3>
-                            <span class="timeline-period">Jan 2028 - Presente</span>
-                        </div>
-                        <p class="timeline-company">🏢 Nome da Empresa</p>
-                        <p class="timeline-description">
-                            Descrição breve sobre as responsabilidades e projetos desenvolvidos neste cargo. Qual foi seu principal impacto na empresa?
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">SpringBoot</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="timeline-item">
+                <div class="timeline-item" data-experience-id="2">
+                    <button class="timeline-preview" data-experience-id="2">
+                        <span class="timeline-period">2023 - 2024</span>
+                        <strong>Desenvolvedor Backend</strong>
+                        <small>Empresa Y</small>
+                        <p class="timeline-description">Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e C++.</p>
+                    </button>
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Desenvolvedor Júnior</h3>
-                            <span class="timeline-period">Jan 2027 - Dez 2027</span>
-                        </div>
-                        <p class="timeline-company">🏢 Outra Empresa</p>
-                        <p class="timeline-description">
-                            Descrição breve sobre as responsabilidades durante o estágio. O que você aprendeu?
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Git</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="timeline-item">
+                <div class="timeline-item" data-experience-id="3">
+                    <button class="timeline-preview" data-experience-id="3">
+                        <span class="timeline-period">2024 - 2025</span>
+                        <strong>Engenheiro de Software</strong>
+                        <small>Empresa Z</small>
+                        <p class="timeline-description">Atuei como engenheiro de software, trabalhando com tecnologias como Python e Java.</p>
+                    </button>
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Estagiário Desenvolvedor</h3>
-                            <span class="timeline-period">Sep 2026 - Jan 2027</span>
-                        </div>
-                        <p class="timeline-company">🏢 Terceira Empresa</p>
-                        <p class="timeline-description">
-                            Descrição sobre suas contribuições iniciais e tecnologias utilizadas.
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">Git</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Contato -->
+        <!-- Seção Contato -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Estou aberto a novas oportunidades e projetos interessantes</p>
-            
-            <div class="social-links">
-                <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" title="GitHub"><img src="assets/github.png" alt="GitHub" srcset=""></a>
-                <a href="https://www.linkedin.com/in/joaovictorgomessoares/" target="_blank" title="LinkedIn"><img src="assets/linkedin.png" alt="LinkedIn" srcset=""></a>
-                <a href="https://wa.me/5522999092042" target="_blank" title="WhatsApp"><img src="assets/whatsapp.png" alt="WhatsApp" srcset=""></a>
-                <a href="mailto:jvgssoares@gmail.com" target="_blank" title="Email"><img src="assets/email.png" alt="Email" srcset=""></a>
+            <div class="contact-hero-copy">
+                <span class="contact-kicker">Vamos tirar sua ideia do papel</span>
+                <h2 class="contact-h2">Seu próximo sistema pode começar com uma conversa simples e estratégica.</h2>
+                <p class="contact-intro">Se você precisa de um Software sólido, uma API confiável ou uma solução digital que gere mais resultado para o seu negócio, eu posso te ajudar a construir isso com clareza, performance e foco no cliente final.</p>
             </div>
-
-            <p>📧 jvgssoares@gmail.com</p>
-            <p>📱 (22) 99909-2042</p>
+            <div class="contact-card-grid">
+                <a class="contact-card" title="Veja meu LinkedIn" href="https://www.linkedin.com/in/joaovictorgomessoares/" target="_blank">
+                    <img class="contact-card-icon" src="assets/linkedin.png" alt="LinkedIn">
+                    <strong>LinkedIn</strong>
+                    <p>Conecte-se comigo e acompanhe minha jornada profissional.</p>
+                </a>
+                <a class="contact-card" title="Veja meu GitHub" href="https://github.com/JoaoVictorGomesSoares" target="_blank">
+                    <img class="contact-card-icon" src="assets/github.png" alt="GitHub">
+                    <strong>GitHub</strong>
+                    <p>Veja meus repositórios, projetos e minha forma de desenvolver soluções.</p>
+                </a>
+                <a class="contact-card" title="Fale comigo pelo WhatsApp" href="https://wa.me/5522999092042" target="_blank">
+                    <img class="contact-card-icon" src="assets/whatsapp.png" alt="WhatsApp">
+                    <strong>WhatsApp</strong>
+                    <p>Fale comigo de forma rápida para orçamentos, dúvidas e oportunidades.</p>
+                </a>
+                <a class="contact-card" title="Envie um e-mail" href="mailto:jvgssoares@gmail.com">
+                    <img class="contact-card-icon" src="assets/email.png" alt="E-mail">
+                    <strong>E-mail</strong>
+                    <p>Ideal para propostas comerciais, detalhes técnicos e contatos profissionais.</p>
+                </a>
+            </div>
+            <div class="contact-direct-links">
+                <a href="mailto:jvgssoares@gmail.com">📧 jvgssoares@gmail.com</a>
+                <a href="https://wa.me/5522999092042" target="_blank">📱 (22) 99909-2042</a>
+            </div>
+            <div class="contact-footer-note">
+                <p>Atendimento aberto para freelancers, projetos autorais, colaborações e oportunidades profissionais.</p>
+            </div>
         </div>
     </section>
 
@@ -606,52 +557,95 @@
         <p>&copy; 2026 João Victor. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Modal de Projeto -->
-    <div id="project-modal" class="modal-overlay">
+        <!-- Modal de Projeto -->
+    <div id="project-modal" class="modal-overlay hidden">
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <button class="modal-close-btn" data-close-modal="project-modal">&times;</button>
             <div class="modal-body">
-                <!-- Sidebar Esquerda com Detalhes -->
                 <div class="modal-sidebar">
-                    <h2 id="modal-title"></h2>
+                    <h2 id="project-modal-title"></h2>
+                    <h3 id="project-modal-subtitle"></h3>
                     <div class="modal-details">
                         <section class="modal-section">
                             <h3>Visão Geral</h3>
-                            <p id="modal-overview"></p>
+                            <p id="project-modal-overview"></p>
                         </section>
                         <section class="modal-section">
                             <h3>Funcionalidades Principais</h3>
-                            <ul id="modal-functionalities"></ul>
+                            <ul id="project-modal-functionalities"></ul>
                         </section>
                         <section class="modal-section">
                             <h3>Vantagens</h3>
-                            <ul id="modal-advantages"></ul>
+                            <ul id="project-modal-advantages"></ul>
                         </section>
                         <section class="modal-section">
                             <h3>Especificações Técnicas</h3>
-                            <p id="modal-specs"></p>
+                            <p id="project-modal-specs"></p>
                         </section>
                         <section class="modal-section">
                             <h3>Propósito</h3>
-                            <p id="modal-purpose"></p>
+                            <p id="project-modal-purpose"></p>
                         </section>
                         <section class="modal-section">
                             <h3>Tecnologias Envolvidas</h3>
-                            <div id="modal-technologies" class="modal-tags"></div>
+                            <div id="project-modal-technologies" class="modal-tags"></div>
                         </section>
-                        <div class="modal-actions">
-                            <a id="modal-link" href="#" target="_blank" class="btn">Ver Projeto</a>
+                        <div class="modal-actions modal-actions-double">
+                            <a id="project-modal-deploy-link" href="#" target="_blank" class="btn">Ver deploy</a>
+                            <a id="project-modal-repo-link" href="#" target="_blank" class="btn">Ver repositório</a>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Direita em Destaque -->
                 <div class="modal-gallery">
-                    <div id="modal-images" class="modal-images"></div>
+                    <div id="project-modal-images" class="modal-images"></div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal de Educação -->
+    <div id="education-modal" class="modal-overlay hidden">
+        <div class="modal-content info-modal-content">
+            <button class="modal-close-btn" data-close-modal="education-modal">&times;</button>
+            <div class="modal-body info-modal-body">
+                <div class="modal-copy">
+                    <span class="info-modal-label">Formação e Certificados</span>
+                    <h2 id="education-modal-title"></h2>
+                    <p id="education-modal-institution" class="info-modal-subtitle"></p>
+                    <p id="education-modal-period" class="info-modal-meta"></p>
+                    <p id="education-modal-description"></p>
+                    <ul id="education-modal-topics" class="info-modal-list"></ul>
+                </div>
+                <div class="certificate-preview" id="education-certificate-preview">
+                    <div class="certificate-placeholder">
+                        <span>Certificado</span>
+                        <strong>Preview indisponível</strong>
+                        <p>Adicione a imagem do certificado na pasta <code>assets</code> para exibição real neste modal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Experiência -->
+    <div id="experience-modal" class="modal-overlay hidden">
+        <div class="modal-content info-modal-content">
+            <button class="modal-close-btn" data-close-modal="experience-modal">&times;</button>
+            <div class="modal-body info-modal-body">
+                <div class="modal-copy">
+                    <span class="info-modal-label">Experiência Profissional</span>
+                    <h2 id="experience-modal-title"></h2>
+                    <p id="experience-modal-company" class="info-modal-subtitle"></p>
+                    <p id="experience-modal-period" class="info-modal-meta"></p>
+                    <p id="experience-modal-description"></p>
+                    <ul id="experience-modal-highlights" class="info-modal-list"></ul>
+                    <div id="experience-modal-tags" class="modal-tags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chamada do arquivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
