@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
+﻿<!DOCTYPE html>
+<html lang="pt-BR" data-tema="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portfólio do João</title>
 </head>
 <body>
+    <!-- Vinheta -->
+    <div id="theme-vignette" aria-hidden="true">
+    </div>
+
     <!-- Navegação -->
     <nav>
         <ul>
@@ -18,7 +23,22 @@
             <li><a href="#education">Educação</a></li>
             <li><a href="#experience">Experiências</a></li>
             <li><a href="#contact">Contato</a></li>
-            <li class="download-btn"><a href="curriculum-JoaoVictorGomesSoares.pdf" download>Acessar Currículo Virtual</a></li>
+            <li class="nav-btn lang-btn">
+                <button aria-label="Alterar idioma" aria-pressed="false" type="button"> 🇧🇷 </button>
+            </li>
+            <li class="nav-btn theme-btn">
+                <button id="theme-toggle" role="switch" aria-checked="false" aria-label="Ativar modo escuro">
+                    <span class="toggle-track"> <!-- Fundo que muda de cor -->
+                        <span id="toggle-thumb" class="toggle-thumb"> <!-- Bolinha com emoji dentro -->
+                            <span class="icon light">☀️</span>
+                            <span class="icon dark">🌙</span>
+                        </span>
+                    </span>
+                </button>
+            </li>
+            <li class="nav-btn download-btn">
+                <a id="open-curriculum" href="curriculum-JoaoVictorGomesSoares.pdf" download>Acessar Currículo Virtual</a>
+            </li>
         </ul>
     </nav>
 
@@ -27,7 +47,7 @@
         <!-- Conteúdo da seção Hero -->
         <div class="hero-content">
             <h1 class="title">Programador Java | Spring Boot</h1>
-            <p class="subtitle">Desenvolvo Softwares que geram mais <strong>clientes</strong>, <br> mais <strong>vendas</strong> e mais <strong>visibilidade</strong> para seu negócio.</p>
+            <p class="subtitle">Desenvolvo Softwares que geram mais <strong>clientes</strong>, <br> mais <strong>vendas</strong> e mais <strong>visibilidade</strong> para seu negócios.</p>
             <p class="name">João Victor Soares</p>
             <div class="hero-links">
                 <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="btn" title="GitHub">Acessar GitHub</a>
@@ -48,7 +68,7 @@
                         <li><span class="tech-item" title="Linux"><img class="tech-img" src="assets/linux.png" alt="LinuxIcon"> Linux</span></li>
                     </ul>
                     <ul class="tech-list" aria-hidden="true">
-                        <li><span class="tech-item" title="Inteligencias Artificiais"><img class="tech-img" src="assets/ai.png" alt="AiIcon"> I.A. </span></li>
+                        <li><span class="tech-item" title="Inteligências Artificiais"><img class="tech-img" src="assets/ai.png" alt="AiIcon"> I.A. </span></li>
                         <li><span class="tech-item" title="Java"><img class="tech-img" src="assets/java.png" alt="JavaIcon"> Java</span></li>
                         <li><span class="tech-item" title="SpringBoot"><img class="tech-img" src="assets/springboot.png" alt="SpringBootIcon"> Spring</span></li>
                         <li><span class="tech-item" title="C++"><img class="tech-img" src="assets/c++.png" alt="C++Icon"> C++</span></li>
@@ -58,7 +78,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- SVG decorativo com órbitas -->
+            <!-- SVG decorativo com Órbitas -->
             <svg
                 class="hero-decoration"
                 viewBox="0 0 1800 1800"
@@ -101,7 +121,7 @@
                     <h3>Quem sou eu?</h3>                   
                     <div class="about-expandable-item" id="para1" role="region" aria-hidden="true">
                         <p>
-                            Sou um Programador Back-End, possuo experiências em tecnologias como <strong>Java</strong>, <strong>Springboot</strong>, <strong>Git</strong> e <strong>DataBases</strong>, gosto de transformar ideias em soluções práticas e funcionais. Possuo 1,5 anos de experiencia 
+                            Sou um Programador Back-End, possuo experiências em tecnologias como <strong>Java</strong>, <strong>Springboot</strong>, <strong>Git</strong> e <strong>DataBases</strong>, gosto de transformar ideias em soluções práticas e funcionais. Possuo 1,5 anos de experiência 
                             <br>
                             <br>
                             Trabalho com tecnologias modernas e estou sempre aprendendo coisas novas. Meu objetivo é criar aplicações que não apenas funcionem bem, mas que também proporcione uma experiência excepcional ao usuário.
@@ -114,7 +134,7 @@
                     <h3>O que eu faço?</h3>
                     <div class="about-expandable-item" id="para2" role="region" aria-hidden="true">
                         <p>
-                            Atuo principalmente como Programador <strong>Java</strong> e sou capacitado na construção de <strong>APIs RESTful</strong> robustas, escaláveis e seguras, utilizando <strong>Java</strong> e <strong>Spring Boot</strong> como principais tecnologias. Trabalho com foco em desempenho, manutenibilidade e organização do código, aplicando princípios de arquitetura limpa, solida, em camadas e boas práticas de desenvolvimento.
+                            Atuo principalmente como Programador <strong>Java</strong> e sou capacitado na construção de <strong>APIs RESTful</strong> robustas, escaláveis e seguras, utilizando <strong>Java</strong> e <strong>Spring Boot</strong> como principais tecnologias. Trabalho com foco em desempenho, manutenibilidade e organizaçã do código, aplicando princípios de arquitetura limpa, solida, em camadas e boas práticas de desenvolvimento.
                             <br>
                             <br>
                             Realizo a integração de aplicações com <strong>bancos de dados</strong> relacionais, atuando na modelagem de dados, definição de entidades, mapeamento ORM e escrita de consultas eficientes. Busco sempre garantir a integridade, consistência e performance dos dados, atendendo às regras de negócio e requisitos técnicos do sistema.
@@ -175,7 +195,7 @@
                     <div class="project-content">
                         <h3 style="margin-bottom: 0;">E-commerce de Óculos</h3>
                         <h3 style="font-size: 0.8rem;">GLASSES</h3>
-                        <p>Um e-commerce de óculos com catálogo de produtos, autenticação de usuário, carrinho de compras e integração com APIs.</p>
+                        <p>Um e-commerce de Óculos com catálogo de produtos, autenticação de usuário, carrinho de compras e integração com APIs.</p>
                         <div class="project-actions">
                             <a href="#" class="project-action-btn project-deploy-btn" data-project-id="2" title="Ver projeto em produção">Ver deploy</a>
                             <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="2" title="Ver repositório no GitHub">Ver repositório</a>
@@ -287,116 +307,116 @@
     <!-- Seção Habilidades -->
     <section id="skills" class="skills">
         <div class="skill-content">
-            <h4>Principais Stacks</h4>
+            <h3>Principais Stacks</h3>
             <div class="skill-techs">
                 <div class="skill-card">
                     <img class="skill-image" src="assets/java.png" alt="Java">
-                    <h3>Java</h3>
+                    <h4>Java</h4>
                     <p class="skill-description">Linguagem de programação orientada a objetos</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/springboot.png" alt="SpringBoot">
-                    <h3>Spring Boot</h3>
+                    <h4>Spring Boot</h4>
                     <p class="skill-description">Framework para desenvolvimento de aplicações Java</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/git.png" alt="Git">
-                    <h3>Git</h3>
+                    <h4>Git</h4>
                     <p class="skill-description">Sistema de controle de versão distribuído</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/mysql.png" alt="MySQL">
-                    <h3>MySQL</h3>
+                    <h4>MySQL</h4>
                     <p class="skill-description">Sistema de gerenciamento de banco de dados</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
             </div>
-            <h4>Outras Stacks</h4>
+            <h3>Outras Stacks</h3>
             <div class="skill-techs">
                 <div class="skill-card">
                     <img class="skill-image" src="assets/c++.png" alt="C++">
-                    <h3>C++</h3>
+                    <h4>C++</h4>
                     <p class="skill-description">Linguagem de programação de baixo nível</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/python.png" alt="Python">
-                    <h3>Python</h3>
+                    <h4>Python</h4>
                     <p class="skill-description">Linguagem de programação interpretada</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/typescript.png" alt="TypeScript">
-                    <h3>TypeScript</h3>
+                    <h4>TypeScript</h4>
                     <p class="skill-description">Linguagem de programação orientada a objetos</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/javascript.png" alt="JavaScript">
-                    <h3>JavaScript</h3>
+                    <h4>JavaScript</h4>
                     <p class="skill-description">Linguagem de programação interpretada</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/html5.png" alt="HTML">
-                    <h3>HTML</h3>
+                    <h4>HTML</h4>
                     <p class="skill-description">Linguagem de marcação para criação de páginas web</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/css3.png" alt="CSS">
-                    <h3>CSS</h3>
+                    <h4>CSS</h4>
                     <p class="skill-description">Linguagem de estilo para definição da apresentação de páginas web</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
-                    <img class="skill-image" src="assets/linux.png" alt="Linux">
-                    <h3>Linux</h3>
-                    <p class="skill-description">Sistema operacional de código aberto</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
-                </div>
-                <div class="skill-card">
                     <img class="skill-image" src="assets/ai.png" alt="I.A.">
-                    <h3>I.A.</h3>
+                    <h4>I.A.</h4>
                     <p class="skill-description">Inteligência Artificial</p>
                     <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
+                <div class="skill-card">
+                    <img class="skill-image" src="assets/linux.png" alt="Linux">
+                    <h4>Linux</h4>
+                    <p class="skill-description">Sistema operacional de código aberto</p>
+                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                </div>
             </div>
-            <h4>Soft Skills</h4>
+            <h3>Soft Skills</h3>
             <div class="skill-techs">
                 <div class="skill-card">
-                    <h3>Comunicação Eficaz</h3>
+                    <h4>Comunicação Eficaz</h4>
                     <p class="skill-description">Capacidade de se comunicar de forma clara e eficaz, tanto oral quanto por escrito.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Trabalho em Equipe</h3>
+                    <h4>Trabalho em Equipe</h4>
                     <p class="skill-description">Habilidade de colaborar efetivamente com colegas de equipe, compartilhando conhecimentos e contribuindo para o sucesso do projeto.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Resolução de Problemas</h3>
+                    <h4>Resolução de Problemas</h4>
                     <p class="skill-description">Capacidade de identificar, analisar e resolver problemas de forma eficiente e criativa.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Adaptabilidade</h3>
+                    <h4>Adaptabilidade</h4>
                     <p class="skill-description">Habilidade de se adaptar a mudanças, aprender novas tecnologias e enfrentar desafios de forma positiva.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Desenvolvimento de APIs RESTful</h3>
+                    <h4>Desenvolvimento de APIs RESTful</h4>
                     <p class="skill-description">Criação de APIs robustas e escaláveis utilizando Java e Spring Boot.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Modelagem e Manipulação de Bancos de Dados</h3>
+                    <h4>Modelagem e Manipulação de Bancos de Dados</h4>
                     <p class="skill-description">Experiência na modelagem de dados, criação de tabelas e consultas SQL eficientes.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Versionamento de Código com Git</h3>
+                    <h4>Versionamento de Código com Git</h4>
                     <p class="skill-description">Utilização de Git para controle de versão, colaboração e organização do fluxo de desenvolvimento.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Programação Orientada a Objetos</h3>
+                    <h4>Programação Orientada a Objetos</h4>
                     <p class="skill-description">Conhecimento e aplicação dos princípios da programação orientada a objetos, incluindo encapsulamento, herança e polimorfismo.</p>
                 </div>
             </div>
@@ -422,7 +442,7 @@
                     <div class="education-icon">📜</div>
                     <div class="education-content">
                         <h3>Spring Boot Essentials</h3>
-                        <p class="education-institution">🏆 Udemy</p>
+                        <p class="education-institution">📖 Udemy</p>
                         <p class="education-period">2024</p>
                         <p class="education-description">Certificação em desenvolvimento com Spring Boot, cobrindo REST APIs, JPA, Hibernate e padrões de design.</p>
                         <button class="education-btn" data-education-id="2">Ver certificados</button>
@@ -432,7 +452,7 @@
                     <div class="education-icon">📜</div>
                     <div class="education-content">
                         <h3>Java Advanced Programming</h3>
-                        <p class="education-institution">🏆 Alura</p>
+                        <p class="education-institution">📖 Alura</p>
                         <p class="education-period">2023</p>
                         <p class="education-description">Certificação avançada em Java, explorando programação orientada a objetos, collections, streams e multithreading.</p>
                         <button class="education-btn" data-education-id="3">Ver certificados</button>
@@ -444,7 +464,7 @@
                         <h3>Git e GitHub Completo</h3>
                         <p class="education-institution">📚 Udemy</p>
                         <p class="education-period">2023</p>
-                        <p class="education-description">Curso completo sobre versionamento de código, Git e GitHub, incluindo workflows colaborativos e boas práticas.</p>
+                        <p class="education-description">Curso completo sobre versionamento de códigos, Git e GitHub, incluindo workflows colaborativos e boas práticas.</p>
                         <button class="education-btn" data-education-id="4">Ver certificados</button>
                     </div>
                 </div>
@@ -480,7 +500,7 @@
             <div class="timeline-horizontal">
                 <!-- Essa div representa a Linha -->
                 <div class="timeline-track"></div>
-                <!-- Cada item representa uma experiência profissional -->
+                <!-- Cada item representa uma experiências profissional -->
                 <div class="timeline-item" data-experience-id="1">
                     <button class="timeline-preview" data-experience-id="1">
                         <span class="timeline-period">2022 - 2023</span>
@@ -517,7 +537,7 @@
         <div class="container">
             <div class="contact-hero-copy">
                 <span class="contact-kicker">Vamos tirar sua ideia do papel</span>
-                <h2 class="contact-h2">Seu próximo sistema pode começar com uma conversa simples e estratégica.</h2>
+                <h2 class="contact-h2">Seu proximo sistema pode começar com uma conversa simples e estratégica.</h2>
                 <p class="contact-intro">Se você precisa de um Software sólido, uma API confiável ou uma solução digital que gere mais resultado para o seu negócio, eu posso te ajudar a construir isso com clareza, performance e foco no cliente final.</p>
             </div>
             <div class="contact-card-grid">
@@ -649,3 +669,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+

@@ -362,6 +362,64 @@ const experiencesData = {
 // Faz a função de abrir o modal de detalhes do projeto, preenchendo os dados dinamicamente com base no ID do projeto clicado
 document.addEventListener('DOMContentLoaded', function() {
 
+    // ELEMENTOS
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const vignette = document.getElementById('theme-vignette');
+
+    if (!toggle || !vignette) {
+        console.error('Elementos do tema não encontrados');
+        return;
+    }
+
+    // DEFINE O TEMA
+    function setTheme(theme) {
+        const isDark = theme === 'dark';
+
+        root.setAttribute('data-tema', theme);
+        toggle.setAttribute('aria-pressed', isDark);
+        toggle.setAttribute(
+            'aria-label',
+            isDark ? 'Ativar modo claro' : 'Ativar modo escuro'
+        );
+
+        localStorage.setItem('tema', theme);
+    }
+
+    // INICIALIZA O TEMA (RODA UMA ÚNICA VEZ)
+    const savedTheme = localStorage.getItem('tema') || 'light';
+    setTheme(savedTheme);
+
+    // CLICK NO TOGGLE
+    toggle.addEventListener('click', () => {
+
+        const currentTheme = root.getAttribute('data-tema');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+   
+        // 1️⃣ anima o botão IMEDIATAMENTE
+        toggle.classList.toggle('dark', newTheme === 'dark');
+
+        // 2️⃣ a vinheta recebe a cor do tema
+        vignette.style.background =
+        newTheme === 'dark'
+            ? 'linear-gradient(90deg, #1e3a5f, #4da3ff)'
+            : 'linear-gradient(90deg, #4da3ff, #1e3a5f)';
+        // ativa a vinheta
+        vignette.classList.add('active');
+
+        // 3️⃣ troca o tema no meio da animação
+        setTimeout(() => {
+            setTheme(newTheme);
+        }, 1000);
+
+        // 4️⃣ remove classe ao fim da animação
+        vignette.addEventListener(
+        'animationend',
+        () => vignette.classList.remove('active'),
+        { once: true }
+        );
+    });
+
     // SEÇÃO "SOBRE" - expandBtns são os botões para expandir ou contrair os paragrafos de conteúdo
     const expandBtns = document.querySelectorAll('.expand-btn');
     expandBtns.forEach(button  => {
@@ -369,7 +427,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const content = document.getElementById(targetId);
         button.addEventListener('click', function() {
 
+            // Verifica se o conteúdo está atualmente expandido ou contraído
             const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            const aboutContents = document.querySelectorAll('.about-expandable-item');
 
             if (!isExpanded) {
                 // ABRIR
@@ -377,6 +437,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 content.setAttribute('aria-hidden', 'false');
                 button.setAttribute('aria-expanded', 'true');
                 button.classList.add('expanded');
+                aboutContents.forEach(item => item.classList.add('expanded'));
+
             } else {
                 // FECHAR
                 content.style.height = content.scrollHeight + 'px';
@@ -387,6 +449,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 content.setAttribute('aria-hidden', 'true');
                 button.setAttribute('aria-expanded', 'false');
                 button.classList.remove('expanded');
+                aboutContents.forEach(item => item.classList.remove('expanded'));
             }
         });
         // Limpa altura após animação (boa prática)
