@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "title": "Portfólio do João",
+    "lang": "pt-BR"
+  },
+  "languageToggle": {
+    "buttonText": "🌐 pt-BR",
+    "ariaLabel": "Alterar idioma para inglês"
+  },
+  "themeToggle": {
+    "enableDark": "Ativar modo escuro",
+    "enableLight": "Ativar modo claro"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "education": "Educação",
+    "experience": "Experiências",
+    "contact": "Contato",
+    "resume": "Acessar Currículo Virtual"
+  },
+  "hero": {
+    "title": "Programador Java | Spring Boot",
+    "subtitle": "Desenvolvo softwares que geram mais <strong>clientes</strong>, <br> mais <strong>vendas</strong> e mais <strong>visibilidade</strong> para o seu negócio.",
+    "name": "João Victor Soares",
+    "actions": {
+      "github": {
+        "label": "Acessar GitHub",
+        "title": "GitHub"
+      },
+      "contact": {
+        "label": "Fale Comigo",
+        "title": "Contato"
+      },
+      "projects": {
+        "label": "Ver Meus Projetos",
+        "title": "Projetos"
+      },
+      "resume": {
+        "label": "Baixar Currículo Virtual",
+        "title": "Currículo"
+      }
+    },
+    "techHeading": "Principais Tecnologias",
+    "tech": {
+      "ai": "Inteligências Artificiais",
+      "aiShort": "I.A.",
+      "java": "Java",
+      "spring": "Spring Boot",
+      "cpp": "C++",
+      "git": "Git",
+      "mysql": "MySQL",
+      "linux": "Linux"
+    }
+  },
+  "about": {
+    "heading": "Sobre Mim",
+    "whoHeading": "Quem sou eu?",
+    "whoBody": "Sou um Programador Back-End, possuo experiências em tecnologias como <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Git</strong> e <strong>bancos de dados</strong>, gosto de transformar ideias em soluções práticas e funcionais. Possuo 1,5 anos de experiência <br><br> Trabalho com tecnologias modernas e estou sempre aprendendo coisas novas. Meu objetivo é criar aplicações que não apenas funcionem bem, mas que também proporcione uma experiência excepcional ao usuário. <br><br> Atualmente tenho trabalhado no meu desenvolvimento como um programador Back-End, diariamente estudo novas tecnologias e desenvolvo projetos práticos, quando não estou programando, gosto de contribuir para a comunidade dev e explorar novos frameworks e ferramentas.",
+    "doHeading": "O que eu faço?",
+    "doBody": "Atuo principalmente como Programador <strong>Java</strong> e sou capacitado na construção de <strong>APIs RESTful</strong> robustas, escaláveis e seguras, utilizando <strong>Java</strong> e <strong>Spring Boot</strong> como principais tecnologias. Trabalho com foco em desempenho, manutenibilidade e organização do código, aplicando princípios de arquitetura limpa, sólida, em camadas e boas práticas de desenvolvimento. <br><br> Realizo a integração de aplicações com <strong>bancos de dados</strong> relacionais, atuando na modelagem de dados, definição de entidades, mapeamento ORM e escrita de consultas eficientes. Busco sempre garantir a integridade, consistência e performance dos dados, atendendo às regras de negócio e requisitos técnicos do sistema. <br><br> Além do desenvolvimento, dedico-me à evolução contínua do código e da arquitetura, realizando refatorações, melhorias técnicas e estudos constantes de novas tecnologias e frameworks. Meu objetivo é entregar soluções estáveis, escaláveis e alinhadas às necessidades do usuário final e do negócio.",
+    "doneHeading": "O que eu já fiz?",
+    "doneBody": "Desenvolvi diversas aplicações back-end utilizando <strong>Java</strong> e <strong>Spring Boot</strong>, com foco na criação de <strong>APIs REST</strong> bem estruturadas, seguindo padrões de projeto e boas práticas. Atuei na implementação de endpoints, validações, tratamento de exceções e regras de negócio, garantindo aplicações confiáveis e bem organizadas. <br><br> Já trabalhei e adquiri experiência na modelagem e manipulação de <strong>bancos de dados</strong> relacionais, incluindo a criação de tabelas, relacionamentos, consultas SQL e otimização de desempenho. Trabalhei garantindo a integridade dos dados, aplicando constraints, normalização e boas práticas de persistência. <br><br> Participei do desenvolvimento de projetos práticos e sistemas completos, utilizando <strong>Git</strong> para versionamento de código e organização do fluxo de desenvolvimento. Essas experiências fortaleceram minha capacidade de resolver problemas, evoluir tecnicamente e aplicar soluções modernas no desenvolvimento <strong>back-end</strong>.",
+    "languagesHeading": "Idiomas",
+    "languagesBody": "Português (Nativo) | Inglês (Fluente)",
+    "academicHeading": "Formação Acadêmica",
+    "academicBody": "Bacharel em Ciência da Computação - Universidade Federal Fluminense (UFF) - 2026-2030",
+    "avatarAlt": "avatar do João Victor",
+    "expand": {
+      "open": "Expandir seção",
+      "close": "Recolher seção"
+    }
+  },
+  "projects": {
+    "heading": "Meus Projetos",
+    "actions": {
+      "deploy": {
+        "label": "Ver deploy",
+        "title": "Ver projeto em produção"
+      },
+      "repo": {
+        "label": "Ver repositório",
+        "title": "Ver repositório no GitHub"
+      }
+    },
+    "modal": {
+      "overview": "Visão Geral",
+      "functionalities": "Funcionalidades Principais",
+      "advantages": "Vantagens",
+      "specs": "Especificações Técnicas",
+      "purpose": "Propósito",
+      "technologies": "Tecnologias Envolvidas",
+      "deploy": "Ver deploy",
+      "repo": "Ver repositório",
+      "close": "Fechar modal",
+      "imagePlaceholder": "Imagem em atualização"
+    },
+    "items": {
+      "1": {
+        "name": "DEMANDS",
+        "subtitle": "Organize tarefas de equipes",
+        "cardDescription": "Uma aplicação planejada para auxiliar grandes equipes a organizar demandas, prioridades, prazos e o alinhamento do trabalho.",
+        "overview": "Gerencie bugs, melhorias e tarefas com simplicidade. O Demands centraliza demandas, define prioridades e prazos, garantindo organização, foco e alinhamento da equipe no dia a dia corporativo.",
+        "functionalities": [
+          "Centralização de demandas",
+          "Definição de prioridades e prazos",
+          "Organização da equipe",
+          "Acompanhamento de bugs e melhorias"
+        ],
+        "advantages": [
+          "Maior organização no trabalho",
+          "Foco nas tarefas prioritárias",
+          "Alinhamento da equipe",
+          "Redução de retrabalho"
+        ],
+        "specs": "Aplicação web desenvolvida com tecnologias front-end modernas, responsiva e otimizada para performance.",
+        "purpose": "Facilitar o gerenciamento de projetos e tarefas em equipes de desenvolvimento.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "2": {
+        "name": "GLASSES",
+        "subtitle": "E-commerce de Óculos",
+        "cardDescription": "Um e-commerce de Óculos com catálogo de produtos, autenticação de usuário, carrinho de compras e integração com APIs.",
+        "overview": "Uma solução de e-commerce para o segmento óptico, com catálogo de produtos, autenticação de usuários, carrinho de compras e integração com APIs externas.",
+        "functionalities": [
+          "Carrinho de compras",
+          "Autenticação de usuário",
+          "Integração com APIs",
+          "Interface responsiva"
+        ],
+        "advantages": [
+          "Experiência de compra fluida",
+          "Segurança na autenticação",
+          "Integração com sistemas externos",
+          "Performance otimizada"
+        ],
+        "specs": "Aplicação com arquitetura Java e Spring Boot, autenticação de usuários, regras de negócio para compras e persistência de dados.",
+        "purpose": "Criar uma plataforma de e-commerce completa e escalável.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "3": {
+        "name": "Stell Fighters",
+        "subtitle": "Jogo interativo",
+        "cardDescription": "Um jogo interativo desenvolvido com Java. Oferece uma experiência divertida e desafiadora com mecânicas bem pensadas.",
+        "overview": "Um jogo interativo focado em diversão e progressão, com mecânicas claras, desafios crescentes e jogabilidade pensada para manter o ritmo do jogador.",
+        "functionalities": [
+          "Mecânicas progressivas",
+          "Controles responsivos",
+          "Sistema de desafios",
+          "Experiência divertida e competitiva"
+        ],
+        "advantages": [
+          "Jogabilidade envolvente",
+          "Estrutura pensada para evolução",
+          "Desafio equilibrado",
+          "Projeto ideal para praticar lógica e arquitetura"
+        ],
+        "specs": "Projeto em Java com foco em organização do código, lógica de jogo e estruturação de regras para uma experiência consistente.",
+        "purpose": "Criar uma experiência interativa e desafiadora com foco em lógica e diversão.",
+        "technologies": [
+          "Java",
+          "POO",
+          "Lógica de Jogo"
+        ]
+      },
+      "4": {
+        "name": "AUTH SERVER",
+        "subtitle": "Sistema de Autenticação e Autorização",
+        "cardDescription": "API responsável por autenticação segura de usuários, utilizando JWT, controle de roles e permissões, seguindo boas práticas de segurança com Spring Security.",
+        "overview": "API responsável por autenticação segura de usuários, com uso de JWT, controle de roles e permissões e aplicação de boas práticas com Spring Security.",
+        "functionalities": [
+          "Autenticação segura",
+          "Controle de roles e permissões",
+          "Gestão de tokens JWT",
+          "Integração com sistemas externos"
+        ],
+        "advantages": [
+          "Segurança robusta",
+          "Facilidade de integração",
+          "Compatibilidade com padrões da indústria",
+          "Manutenção simplificada"
+        ],
+        "specs": "API REST desenvolvida com Spring Boot, utilizando PostgreSQL como banco de dados e JWT para gerenciamento de tokens.",
+        "purpose": "Fornecer um sistema de autenticação e autorização seguro e escalável.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "JWT",
+          "Spring Security"
+        ]
+      },
+      "5": {
+        "name": "FINTAB (App de finanças)",
+        "subtitle": "API de Controle Financeiro",
+        "cardDescription": "API REST para gerenciamento de finanças pessoais, com registro de receitas e despesas, categorização e cálculo automático de saldo.",
+        "overview": "API REST para organizar finanças pessoais com registros de receitas e despesas, categorização por tipo e cálculo automático de saldo.",
+        "functionalities": [
+          "Registro de receitas e despesas",
+          "Categorização de transações",
+          "Cálculo automático de saldo",
+          "Relatórios financeiros"
+        ],
+        "advantages": [
+          "Facilidade de uso",
+          "Integração com sistemas existentes",
+          "Segurança na manipulação de dados financeiros",
+          "Relatórios detalhados"
+        ],
+        "specs": "API REST desenvolvida com Spring Boot, utilizando PostgreSQL como banco de dados.",
+        "purpose": "Fornecer uma solução completa para o gerenciamento financeiro pessoal.",
+        "technologies": [
+          "Spring Boot",
+          "PostgreSQL",
+          "JWT"
+        ]
+      },
+      "6": {
+        "name": "AGENDA (Dentista ou Esteticista)",
+        "subtitle": "Sistema de Agendamento de Serviços",
+        "cardDescription": "Backend para agendamento de serviços, com controle de horários disponíveis, validação de conflitos e gerenciamento completo dos agendamentos.",
+        "overview": "Backend para gestão de agendamentos com controle de horários, validação de conflitos e organização completa das reservas.",
+        "functionalities": [
+          "Marcação de horários",
+          "Gerenciamento de serviços",
+          "Notificações automáticas",
+          "Relatórios de agendamento"
+        ],
+        "advantages": [
+          "Facilidade de uso",
+          "Agilidade no processo de agendamento",
+          "Personalização das preferências",
+          "Acompanhamento em tempo real"
+        ],
+        "specs": "Backend desenvolvido com Spring Boot, persistência em PostgreSQL, validações de conflito e envio de notificações automatizadas.",
+        "purpose": "Fornecer uma solução eficiente para o gerenciamento de agendamentos de serviços.",
+        "technologies": [
+          "Spring Boot",
+          "Scheduler",
+          "PostgreSQL",
+          "Java Mail / SMTP"
+        ]
+      },
+      "7": {
+        "name": "CHATREPETECO",
+        "subtitle": "API de Chat em Tempo Real",
+        "cardDescription": "Sistema de comunicação em tempo real utilizando WebSocket, permitindo conversas privadas ou em grupo com histórico de mensagens.",
+        "overview": "API de comunicação em tempo real usando WebSocket para permitir conversas privadas, em grupo e com histórico persistido.",
+        "functionalities": [
+          "Mensagens instantâneas",
+          "Sistema de grupos",
+          "Notificações automáticas",
+          "Histórico de conversas"
+        ],
+        "advantages": [
+          "Comunicação eficiente",
+          "Interface intuitiva",
+          "Segurança nas comunicações",
+          "Integração com outras aplicações"
+        ],
+        "specs": "API em Spring Boot com comunicação em tempo real via WebSocket, persistência em PostgreSQL, uso de Redis e autenticação com JWT.",
+        "purpose": "Fornecer uma solução de chat em tempo real para melhorar a comunicação entre usuários.",
+        "technologies": [
+          "Spring Boot",
+          "WebSocket",
+          "PostgreSQL",
+          "Redis",
+          "JWT"
+        ]
+      },
+      "8": {
+        "name": "NOTIFICA",
+        "subtitle": "Sistema de Notificações (Microserviço)",
+        "cardDescription": "Microserviço para envio de notificações de forma assíncrona, utilizando filas para garantir desempenho, escalabilidade e tolerância a falhas.",
+        "overview": "Microserviço dedicado ao envio assíncrono de notificações, com foco em confiabilidade, filas de processamento e escalabilidade.",
+        "functionalities": [
+          "Envio de notificações",
+          "Gerenciamento de canais",
+          "Personalização das preferências",
+          "Relatórios de notificações"
+        ],
+        "advantages": [
+          "Entrega rápida das notificações",
+          "Flexibilidade na configuração",
+          "Integração com sistemas existentes",
+          "Relatórios detalhados"
+        ],
+        "specs": "Microserviço em Spring Boot para processamento assíncrono de notificações, integrado a mensageria e SMTP para entrega confiável.",
+        "purpose": "Fornecer uma solução eficiente para o gerenciamento de notificações em tempo real.",
+        "technologies": [
+          "Spring Boot",
+          "Docker",
+          "RabbitMQ ou Kafka",
+          "SMTP"
+        ]
+      },
+      "9": {
+        "name": "AUDITORIA",
+        "subtitle": "API de Gestão de Usuários e Logs",
+        "cardDescription": "API corporativa para gerenciamento de usuários com registro de ações, auditoria completa e rastreabilidade das operações do sistema.",
+        "overview": "API corporativa para gestão de usuários e rastreamento de eventos, garantindo auditoria completa e monitoramento das operações do sistema.",
+        "functionalities": [
+          "Registro de atividades",
+          "Gestão de usuários",
+          "Relatórios de auditoria",
+          "Controle de acesso"
+        ],
+        "advantages": [
+          "Conformidade regulatória",
+          "Rastreabilidade das ações",
+          "Segurança dos dados",
+          "Relatórios detalhados"
+        ],
+        "specs": "API corporativa desenvolvida com Spring Boot, autenticação com JWT, persistência em PostgreSQL e rastreabilidade das operações.",
+        "purpose": "Fornecer uma solução completa para o gerenciamento de usuários e logs.",
+        "technologies": [
+          "Spring Boot",
+          "PostgreSQL",
+          "JWT",
+          "Auditoria"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "mainHeading": "Principais Stacks",
+    "otherHeading": "Outras Stacks",
+    "softHeading": "Soft Skills",
+    "experienceLabel": "possuo 1,5 anos de experiência com essa tecnologia",
+    "items": {
+      "java": {
+        "name": "Java",
+        "description": "Linguagem de programação orientada a objetos"
+      },
+      "springBoot": {
+        "name": "Spring Boot",
+        "description": "Framework para desenvolvimento de aplicações Java"
+      },
+      "git": {
+        "name": "Git",
+        "description": "Sistema de controle de versão distribuído"
+      },
+      "mysql": {
+        "name": "MySQL",
+        "description": "Sistema de gerenciamento de banco de dados"
+      },
+      "cpp": {
+        "name": "C++",
+        "description": "Linguagem de programação de baixo nível"
+      },
+      "python": {
+        "name": "Python",
+        "description": "Linguagem de programação interpretada"
+      },
+      "typeScript": {
+        "name": "TypeScript",
+        "description": "Linguagem de programação orientada a objetos"
+      },
+      "javaScript": {
+        "name": "JavaScript",
+        "description": "Linguagem de programação interpretada"
+      },
+      "html": {
+        "name": "HTML",
+        "description": "Linguagem de marcação para criação de páginas web"
+      },
+      "css": {
+        "name": "CSS",
+        "description": "Linguagem de estilo para definição da apresentação de páginas web"
+      },
+      "ai": {
+        "name": "I.A.",
+        "description": "Inteligência Artificial"
+      },
+      "linux": {
+        "name": "Linux",
+        "description": "Sistema operacional de código aberto"
+      }
+    },
+    "softItems": {
+      "communication": {
+        "title": "Comunicação Eficaz",
+        "description": "Capacidade de se comunicar de forma clara e eficaz, tanto oral quanto por escrito."
+      },
+      "teamwork": {
+        "title": "Trabalho em Equipe",
+        "description": "Habilidade de colaborar efetivamente com colegas de equipe, compartilhando conhecimentos e contribuindo para o sucesso do projeto."
+      },
+      "problemSolving": {
+        "title": "Resolução de Problemas",
+        "description": "Capacidade de identificar, analisar e resolver problemas de forma eficiente e criativa."
+      },
+      "adaptability": {
+        "title": "Adaptabilidade",
+        "description": "Habilidade de se adaptar a mudanças, aprender novas tecnologias e enfrentar desafios de forma positiva."
+      },
+      "restApis": {
+        "title": "Desenvolvimento de APIs RESTful",
+        "description": "Criação de APIs robustas e escaláveis utilizando Java e Spring Boot."
+      },
+      "databases": {
+        "title": "Modelagem e Manipulação de Bancos de Dados",
+        "description": "Experiência na modelagem de dados, criação de tabelas e consultas SQL eficientes."
+      },
+      "gitWorkflow": {
+        "title": "Versionamento de Código com Git",
+        "description": "Utilização de Git para controle de versão, colaboração e organização do fluxo de desenvolvimento."
+      },
+      "oop": {
+        "title": "Programação Orientada a Objetos",
+        "description": "Conhecimento e aplicação dos princípios da programação orientada a objetos, incluindo encapsulamento, herança e polimorfismo."
+      }
+    }
+  },
+  "education": {
+    "heading": "Educação",
+    "actions": {
+      "current": "Cursando ...",
+      "certificates": "Ver certificados"
+    },
+    "modal": {
+      "label": "Formação e Certificados",
+      "close": "Fechar modal",
+      "certificate": "Ver certificado",
+      "placeholderTitle": "Certificado",
+      "placeholderSubtitle": "Preview indisponível",
+      "placeholderBody": "Adicione a imagem do certificado na pasta <code>assets</code> para exibição real neste modal."
+    },
+    "items": {
+      "1": {
+        "title": "Bacharelado em Ciência da Computação",
+        "institution": "📚 Universidade Federal Fluminense (UFF)",
+        "period": "2026 - 2030",
+        "cardDescription": "Formação completa em Ciência da Computação com ênfase em desenvolvimento de software, algoritmos, estruturas de dados e engenharia de software.",
+        "modalDescription": "Formação completa em Ciência da Computação com foco em desenvolvimento de software, algoritmos, estruturas de dados, banco de dados e engenharia de software.",
+        "topics": [
+          "Java",
+          "Python",
+          "C++",
+          "SQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "2": {
+        "title": "Spring Boot Essentials",
+        "institution": "📖 Udemy",
+        "period": "2024",
+        "cardDescription": "Certificação em desenvolvimento com Spring Boot, cobrindo REST APIs, JPA, Hibernate e padrões de design.",
+        "modalDescription": "Formação prática em Spring Boot cobrindo APIs REST, injeção de dependência, persistência com JPA/Hibernate e boas práticas para aplicações Java modernas.",
+        "topics": [
+          "Spring Boot",
+          "Java",
+          "REST APIs",
+          "JPA",
+          "Hibernate"
+        ]
+      },
+      "3": {
+        "title": "Java Advanced Programming",
+        "institution": "📖 Alura",
+        "period": "2023",
+        "cardDescription": "Certificação avançada em Java, explorando programação orientada a objetos, collections, streams e multithreading.",
+        "modalDescription": "Estudo aprofundado em Java com foco em programação orientada a objetos, coleções, streams, concorrência e construção de código mais robusto.",
+        "topics": [
+          "Java",
+          "POO",
+          "Collections",
+          "Streams",
+          "Multithreading"
+        ]
+      },
+      "4": {
+        "title": "Git e GitHub Completo",
+        "institution": "📚 Udemy",
+        "period": "2023",
+        "cardDescription": "Curso completo sobre versionamento de códigos, Git e GitHub, incluindo workflows colaborativos e boas práticas.",
+        "modalDescription": "Capacitação focada em versionamento com Git, organização de branches, merges, pull requests e fluxos colaborativos em GitHub.",
+        "topics": [
+          "Git",
+          "GitHub",
+          "Branches",
+          "Pull Requests",
+          "Workflow"
+        ]
+      },
+      "5": {
+        "title": "SQL e Banco de Dados",
+        "institution": "📚 Coursera",
+        "period": "2023",
+        "cardDescription": "Curso abrangente sobre SQL, normalização de dados, design de banco de dados e otimização de queries.",
+        "modalDescription": "Formação voltada para modelagem relacional, consultas SQL, normalização, performance e boas práticas de persistência de dados.",
+        "topics": [
+          "SQL",
+          "Modelagem Relacional",
+          "Normalização",
+          "Queries",
+          "Otimização"
+        ]
+      },
+      "6": {
+        "title": "Clean Code e SOLID Principles",
+        "institution": "📚 Pluralsight",
+        "period": "2024",
+        "cardDescription": "Curso sobre melhores práticas de programação, padrões de design e princípios SOLID para código limpo e manutenível.",
+        "modalDescription": "Aprofundamento em legibilidade, refatoração, design orientado a objetos e aplicação dos princípios SOLID no dia a dia do desenvolvimento.",
+        "topics": [
+          "Clean Code",
+          "SOLID",
+          "Refatoração",
+          "Design",
+          "Boas Práticas"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "heading": "Minha Jornada",
+    "modal": {
+      "label": "Experiência Profissional",
+      "close": "Fechar modal"
+    },
+    "items": {
+      "1": {
+        "period": "2022 - 2023",
+        "title": "Freelancer - Backend",
+        "company": "Empresa X",
+        "cardDescription": "Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e Git.",
+        "modalDescription": "Atuei como desenvolvedor backend em projetos sob demanda, criando APIs, organizando regras de negócio e estruturando fluxos para entregas consistentes.",
+        "highlights": [
+          "Implementação de APIs e regras de negócio.",
+          "Versionamento e organização do fluxo de desenvolvimento com Git.",
+          "Comunicação direta com demandas e ajustes de projeto."
+        ],
+        "tags": [
+          "Java",
+          "Spring",
+          "Git",
+          "Backend"
+        ]
+      },
+      "2": {
+        "period": "2023 - 2024",
+        "title": "Desenvolvedor Backend",
+        "company": "Empresa Y",
+        "cardDescription": "Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e C++.",
+        "modalDescription": "Trabalhei com desenvolvimento backend em soluções estruturadas, integrando APIs REST, persistência de dados e evolução contínua do código.",
+        "highlights": [
+          "Desenvolvimento de APIs RESTful.",
+          "Integração com bancos de dados e consultas otimizadas.",
+          "Implementação de autenticação e autorização."
+        ],
+        "tags": [
+          "Java",
+          "Spring",
+          "C++",
+          "SQL",
+          "Backend"
+        ]
+      },
+      "3": {
+        "period": "2024 - 2025",
+        "title": "Engenheiro de Software",
+        "company": "Empresa Z",
+        "cardDescription": "Atuei como engenheiro de software, trabalhando com tecnologias como Python e Java.",
+        "modalDescription": "Atuei no desenho e evolução de soluções escaláveis, colaborando com decisões técnicas, organização do código e melhoria contínua de processos.",
+        "highlights": [
+          "Desenvolvimento de soluções escaláveis.",
+          "Aplicação de práticas de desenvolvimento ágil.",
+          "Colaboração técnica com equipes multidisciplinares."
+        ],
+        "tags": [
+          "Python",
+          "Java",
+          "SQL",
+          "Clean Code",
+          "Engenharia de Software"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "kicker": "Vamos tirar sua ideia do papel",
+    "heading": "Seu próximo sistema pode começar com uma conversa simples e estratégica.",
+    "intro": "Se você precisa de um Software sólido, uma API confiável ou uma solução digital que gere mais resultado para o seu negócio, eu posso te ajudar a construir isso com clareza, performance e foco no cliente final.",
+    "cards": {
+      "linkedin": {
+        "title": "Veja meu LinkedIn",
+        "label": "LinkedIn",
+        "description": "Conecte-se comigo e acompanhe minha jornada profissional."
+      },
+      "github": {
+        "title": "Veja meu GitHub",
+        "label": "GitHub",
+        "description": "Veja meus repositórios, projetos e minha forma de desenvolver soluções."
+      },
+      "whatsapp": {
+        "title": "Fale comigo pelo WhatsApp",
+        "label": "WhatsApp",
+        "description": "Fale comigo de forma rápida para orçamentos, dúvidas e oportunidades."
+      },
+      "email": {
+        "title": "Envie um e-mail",
+        "label": "E-mail",
+        "description": "Ideal para propostas comerciais, detalhes técnicos e contatos profissionais."
+      }
+    },
+    "footerNote": "Atendimento aberto para freelancers, projetos autorais, colaborações e oportunidades profissionais."
+  },
+  "footer": {
+    "copyright": "© 2026 João Victor. Todos os direitos reservados."
+  }
+}

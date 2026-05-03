@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "title": "João's Portfolio",
+    "lang": "en-US"
+  },
+  "languageToggle": {
+    "buttonText": "🌐 en-US",
+    "ariaLabel": "Switch language to Portuguese"
+  },
+  "themeToggle": {
+    "enableDark": "Enable dark mode",
+    "enableLight": "Enable light mode"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "experience": "Experience",
+    "contact": "Contact",
+    "resume": "Open Resume"
+  },
+  "hero": {
+    "title": "Java Developer | Spring Boot",
+    "subtitle": "I build software that drives more <strong>clients</strong>, <br> more <strong>sales</strong>, and more <strong>visibility</strong> for your business.",
+    "name": "João Victor Soares",
+    "actions": {
+      "github": {
+        "label": "Open GitHub",
+        "title": "GitHub"
+      },
+      "contact": {
+        "label": "Contact Me",
+        "title": "Contact"
+      },
+      "projects": {
+        "label": "View My Projects",
+        "title": "Projects"
+      },
+      "resume": {
+        "label": "Download Resume",
+        "title": "Resume"
+      }
+    },
+    "techHeading": "Core Technologies",
+    "tech": {
+      "ai": "Artificial Intelligence",
+      "aiShort": "AI",
+      "java": "Java",
+      "spring": "Spring Boot",
+      "cpp": "C++",
+      "git": "Git",
+      "mysql": "MySQL",
+      "linux": "Linux"
+    }
+  },
+  "about": {
+    "heading": "About Me",
+    "whoHeading": "Who am I?",
+    "whoBody": "I am a back-end developer with experience in technologies such as <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Git</strong>, and <strong>databases</strong>. I enjoy turning ideas into practical, functional solutions and I have 1.5 years of experience. <br><br> I work with modern technologies and I am always learning new things. My goal is to build applications that not only work well, but also deliver an exceptional user experience. <br><br> Right now I am focused on growing as a back-end developer. I study new technologies daily and build hands-on projects. When I am not coding, I enjoy contributing to the developer community and exploring new frameworks and tools.",
+    "doHeading": "What do I do?",
+    "doBody": "I primarily work as a <strong>Java</strong> developer and I am skilled in building robust, scalable, and secure <strong>RESTful APIs</strong>, using <strong>Java</strong> and <strong>Spring Boot</strong> as my main technologies. I focus on performance, maintainability, and code organization by applying clean architecture, SOLID principles, layered design, and development best practices. <br><br> I integrate applications with relational <strong>databases</strong>, working on data modeling, entity definition, ORM mapping, and efficient query writing. I always aim to ensure data integrity, consistency, and performance while meeting business rules and technical requirements. <br><br> Beyond development, I stay committed to continuous improvement of both code and architecture through refactoring, technical enhancements, and ongoing study of new technologies and frameworks. My goal is to deliver stable, scalable solutions aligned with user needs and business goals.",
+    "doneHeading": "What have I built?",
+    "doneBody": "I have built several back-end applications using <strong>Java</strong> and <strong>Spring Boot</strong>, focused on creating well-structured <strong>REST APIs</strong> while following design patterns and best practices. I worked on endpoints, validations, exception handling, and business rules, ensuring reliable and well-organized applications. <br><br> I have also gained experience in modeling and working with relational <strong>databases</strong>, including table creation, relationships, SQL queries, and performance optimization. I worked to preserve data integrity through constraints, normalization, and sound persistence practices. <br><br> I took part in hands-on projects and complete systems, using <strong>Git</strong> for version control and development flow organization. These experiences strengthened my ability to solve problems, grow technically, and apply modern solutions in <strong>back-end</strong> development.",
+    "languagesHeading": "Languages",
+    "languagesBody": "Portuguese (Native) | English (Fluent)",
+    "academicHeading": "Academic Background",
+    "academicBody": "Bachelor's Degree in Computer Science - Federal Fluminense University (UFF) - 2026-2030",
+    "avatarAlt": "João Victor avatar",
+    "expand": {
+      "open": "Expand section",
+      "close": "Collapse section"
+    }
+  },
+  "projects": {
+    "heading": "My Projects",
+    "actions": {
+      "deploy": {
+        "label": "View live",
+        "title": "View live project"
+      },
+      "repo": {
+        "label": "View repository",
+        "title": "View repository on GitHub"
+      }
+    },
+    "modal": {
+      "overview": "Overview",
+      "functionalities": "Core Features",
+      "advantages": "Benefits",
+      "specs": "Technical Specifications",
+      "purpose": "Purpose",
+      "technologies": "Technologies Involved",
+      "deploy": "View live",
+      "repo": "View repository",
+      "close": "Close modal",
+      "imagePlaceholder": "Image coming soon"
+    },
+    "items": {
+      "1": {
+        "name": "DEMANDS",
+        "subtitle": "Organize team tasks",
+        "cardDescription": "An application designed to help large teams organize requests, priorities, deadlines, and day-to-day alignment.",
+        "overview": "Manage bugs, improvements, and tasks with clarity. Demands centralizes requests, defines priorities and deadlines, and keeps teams organized, focused, and aligned.",
+        "functionalities": [
+          "Centralized task management",
+          "Priority and deadline definition",
+          "Team organization",
+          "Bug and improvement tracking"
+        ],
+        "advantages": [
+          "Better work organization",
+          "Focus on high-priority tasks",
+          "Stronger team alignment",
+          "Less rework"
+        ],
+        "specs": "A responsive web application built with modern front-end technologies and optimized for performance.",
+        "purpose": "Make project and task management easier for development teams.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "2": {
+        "name": "GLASSES",
+        "subtitle": "Eyewear e-commerce",
+        "cardDescription": "An eyewear e-commerce platform with product catalog, user authentication, shopping cart, and API integrations.",
+        "overview": "An e-commerce solution for the eyewear market, featuring product catalog management, user authentication, shopping cart flows, and external API integrations.",
+        "functionalities": [
+          "Shopping cart",
+          "User authentication",
+          "API integrations",
+          "Responsive interface"
+        ],
+        "advantages": [
+          "Smooth shopping experience",
+          "Secure authentication",
+          "Integration with external systems",
+          "Optimized performance"
+        ],
+        "specs": "Application built with Java and Spring Boot architecture, user authentication, purchase business rules, and data persistence.",
+        "purpose": "Create a complete and scalable e-commerce platform.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "3": {
+        "name": "Stell Fighters",
+        "subtitle": "Interactive game",
+        "cardDescription": "An interactive game built with Java. It delivers a fun and challenging experience with well-planned mechanics.",
+        "overview": "An interactive game focused on fun and progression, with clear mechanics, increasing challenges, and gameplay designed to keep the player engaged.",
+        "functionalities": [
+          "Progressive mechanics",
+          "Responsive controls",
+          "Challenge system",
+          "Fun and competitive experience"
+        ],
+        "advantages": [
+          "Engaging gameplay",
+          "Well-structured progression",
+          "Balanced challenge",
+          "Great project for practicing logic and architecture"
+        ],
+        "specs": "A Java project focused on clean code organization, game logic, and structured rules for a consistent experience.",
+        "purpose": "Create an interactive and challenging experience centered on logic and fun.",
+        "technologies": [
+          "Java",
+          "OOP",
+          "Game Logic"
+        ]
+      },
+      "4": {
+        "name": "AUTH SERVER",
+        "subtitle": "Authentication and Authorization System",
+        "cardDescription": "An API responsible for secure user authentication using JWT, roles, and permissions, following Spring Security best practices.",
+        "overview": "An API focused on secure user authentication using JWT, role and permission control, and Spring Security best practices.",
+        "functionalities": [
+          "Secure authentication",
+          "Role and permission control",
+          "JWT token management",
+          "Integration with external systems"
+        ],
+        "advantages": [
+          "Robust security",
+          "Easy integration",
+          "Compatibility with industry standards",
+          "Simplified maintenance"
+        ],
+        "specs": "REST API built with Spring Boot, using PostgreSQL as the database and JWT for token management.",
+        "purpose": "Provide a secure and scalable authentication and authorization system.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "JWT",
+          "Spring Security"
+        ]
+      },
+      "5": {
+        "name": "FINTAB (Finance App)",
+        "subtitle": "Financial Control API",
+        "cardDescription": "A REST API for personal finance management, including income and expense tracking, categorization, and automatic balance calculation.",
+        "overview": "A REST API for organizing personal finances with income and expense tracking, categorization by type, and automatic balance calculation.",
+        "functionalities": [
+          "Income and expense tracking",
+          "Transaction categorization",
+          "Automatic balance calculation",
+          "Financial reports"
+        ],
+        "advantages": [
+          "Ease of use",
+          "Integration with existing systems",
+          "Secure handling of financial data",
+          "Detailed reports"
+        ],
+        "specs": "REST API built with Spring Boot using PostgreSQL as the database.",
+        "purpose": "Provide a complete solution for personal finance management.",
+        "technologies": [
+          "Spring Boot",
+          "PostgreSQL",
+          "JWT"
+        ]
+      },
+      "6": {
+        "name": "AGENDA (Dentist or Esthetician)",
+        "subtitle": "Service Scheduling System",
+        "cardDescription": "A backend for service scheduling with available time control, conflict validation, and full appointment management.",
+        "overview": "A scheduling backend with time-slot control, conflict validation, and complete reservation management.",
+        "functionalities": [
+          "Time slot booking",
+          "Service management",
+          "Automated notifications",
+          "Scheduling reports"
+        ],
+        "advantages": [
+          "Ease of use",
+          "Faster scheduling process",
+          "Preference customization",
+          "Real-time tracking"
+        ],
+        "specs": "Backend built with Spring Boot, PostgreSQL persistence, conflict validation, and automated notification delivery.",
+        "purpose": "Provide an efficient solution for managing service appointments.",
+        "technologies": [
+          "Spring Boot",
+          "Scheduler",
+          "PostgreSQL",
+          "Java Mail / SMTP"
+        ]
+      },
+      "7": {
+        "name": "CHATREPETECO",
+        "subtitle": "Real-Time Chat API",
+        "cardDescription": "A real-time communication system using WebSocket, allowing private or group conversations with message history.",
+        "overview": "A real-time communication API using WebSocket to support private chats, group conversations, and persisted history.",
+        "functionalities": [
+          "Instant messaging",
+          "Group system",
+          "Automated notifications",
+          "Conversation history"
+        ],
+        "advantages": [
+          "Efficient communication",
+          "Intuitive experience",
+          "Secure communications",
+          "Integration with other applications"
+        ],
+        "specs": "Spring Boot API with real-time communication via WebSocket, PostgreSQL persistence, Redis usage, and JWT authentication.",
+        "purpose": "Provide a real-time chat solution to improve communication between users.",
+        "technologies": [
+          "Spring Boot",
+          "WebSocket",
+          "PostgreSQL",
+          "Redis",
+          "JWT"
+        ]
+      },
+      "8": {
+        "name": "NOTIFICA",
+        "subtitle": "Notification System (Microservice)",
+        "cardDescription": "A microservice for asynchronous notification delivery using queues to ensure performance, scalability, and fault tolerance.",
+        "overview": "A dedicated microservice for asynchronous notification delivery with a focus on reliability, queue-based processing, and scalability.",
+        "functionalities": [
+          "Notification delivery",
+          "Channel management",
+          "Preference customization",
+          "Notification reports"
+        ],
+        "advantages": [
+          "Fast delivery",
+          "Flexible configuration",
+          "Integration with existing systems",
+          "Detailed reports"
+        ],
+        "specs": "Spring Boot microservice for asynchronous notification processing, integrated with messaging systems and SMTP for reliable delivery.",
+        "purpose": "Provide an efficient solution for real-time notification management.",
+        "technologies": [
+          "Spring Boot",
+          "Docker",
+          "RabbitMQ or Kafka",
+          "SMTP"
+        ]
+      },
+      "9": {
+        "name": "AUDITORIA",
+        "subtitle": "User and Logs Management API",
+        "cardDescription": "A corporate API for user management with action tracking, full auditing, and traceability across system operations.",
+        "overview": "A corporate API for user management and event tracking, ensuring full auditing and monitoring of system operations.",
+        "functionalities": [
+          "Activity logging",
+          "User management",
+          "Audit reports",
+          "Access control"
+        ],
+        "advantages": [
+          "Regulatory compliance",
+          "Action traceability",
+          "Data security",
+          "Detailed reports"
+        ],
+        "specs": "Corporate API built with Spring Boot, JWT authentication, PostgreSQL persistence, and operational traceability.",
+        "purpose": "Provide a complete solution for managing users and logs.",
+        "technologies": [
+          "Spring Boot",
+          "PostgreSQL",
+          "JWT",
+          "Auditing"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "mainHeading": "Core Stack",
+    "otherHeading": "Other Stacks",
+    "softHeading": "Soft Skills",
+    "experienceLabel": "I have 1.5 years of experience with this technology",
+    "items": {
+      "java": {
+        "name": "Java",
+        "description": "Object-oriented programming language"
+      },
+      "springBoot": {
+        "name": "Spring Boot",
+        "description": "Framework for building Java applications"
+      },
+      "git": {
+        "name": "Git",
+        "description": "Distributed version control system"
+      },
+      "mysql": {
+        "name": "MySQL",
+        "description": "Database management system"
+      },
+      "cpp": {
+        "name": "C++",
+        "description": "Low-level programming language"
+      },
+      "python": {
+        "name": "Python",
+        "description": "Interpreted programming language"
+      },
+      "typeScript": {
+        "name": "TypeScript",
+        "description": "Object-oriented programming language"
+      },
+      "javaScript": {
+        "name": "JavaScript",
+        "description": "Interpreted programming language"
+      },
+      "html": {
+        "name": "HTML",
+        "description": "Markup language for building web pages"
+      },
+      "css": {
+        "name": "CSS",
+        "description": "Style language for defining web page presentation"
+      },
+      "ai": {
+        "name": "AI",
+        "description": "Artificial Intelligence"
+      },
+      "linux": {
+        "name": "Linux",
+        "description": "Open-source operating system"
+      }
+    },
+    "softItems": {
+      "communication": {
+        "title": "Effective Communication",
+        "description": "Ability to communicate clearly and effectively, both verbally and in writing."
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "Ability to collaborate effectively with teammates, share knowledge, and contribute to project success."
+      },
+      "problemSolving": {
+        "title": "Problem Solving",
+        "description": "Ability to identify, analyze, and solve problems efficiently and creatively."
+      },
+      "adaptability": {
+        "title": "Adaptability",
+        "description": "Ability to adapt to change, learn new technologies, and face challenges with a positive mindset."
+      },
+      "restApis": {
+        "title": "RESTful API Development",
+        "description": "Building robust and scalable APIs using Java and Spring Boot."
+      },
+      "databases": {
+        "title": "Database Modeling and Management",
+        "description": "Experience with data modeling, table creation, and efficient SQL queries."
+      },
+      "gitWorkflow": {
+        "title": "Git-Based Version Control",
+        "description": "Using Git for version control, collaboration, and structured development workflows."
+      },
+      "oop": {
+        "title": "Object-Oriented Programming",
+        "description": "Knowledge and application of object-oriented programming principles, including encapsulation, inheritance, and polymorphism."
+      }
+    }
+  },
+  "education": {
+    "heading": "Education",
+    "actions": {
+      "current": "In Progress...",
+      "certificates": "View certificates"
+    },
+    "modal": {
+      "label": "Education and Certificates",
+      "close": "Close modal",
+      "certificate": "View certificate",
+      "placeholderTitle": "Certificate",
+      "placeholderSubtitle": "Preview unavailable",
+      "placeholderBody": "Add the certificate image to the <code>assets</code> folder to display a real preview in this modal."
+    },
+    "items": {
+      "1": {
+        "title": "Bachelor's Degree in Computer Science",
+        "institution": "📚 Federal Fluminense University (UFF)",
+        "period": "2026 - 2030",
+        "cardDescription": "Complete degree in Computer Science with emphasis on software development, algorithms, data structures, and software engineering.",
+        "modalDescription": "Complete degree in Computer Science focused on software development, algorithms, data structures, databases, and software engineering.",
+        "topics": [
+          "Java",
+          "Python",
+          "C++",
+          "SQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "2": {
+        "title": "Spring Boot Essentials",
+        "institution": "📖 Udemy",
+        "period": "2024",
+        "cardDescription": "Certification in Spring Boot development covering REST APIs, JPA, Hibernate, and design patterns.",
+        "modalDescription": "Hands-on training in Spring Boot covering REST APIs, dependency injection, persistence with JPA/Hibernate, and best practices for modern Java applications.",
+        "topics": [
+          "Spring Boot",
+          "Java",
+          "REST APIs",
+          "JPA",
+          "Hibernate"
+        ]
+      },
+      "3": {
+        "title": "Java Advanced Programming",
+        "institution": "📖 Alura",
+        "period": "2023",
+        "cardDescription": "Advanced Java certification exploring object-oriented programming, collections, streams, and multithreading.",
+        "modalDescription": "In-depth Java study focused on object-oriented programming, collections, streams, concurrency, and more robust code design.",
+        "topics": [
+          "Java",
+          "OOP",
+          "Collections",
+          "Streams",
+          "Multithreading"
+        ]
+      },
+      "4": {
+        "title": "Complete Git and GitHub",
+        "institution": "📚 Udemy",
+        "period": "2023",
+        "cardDescription": "Complete course on code versioning, Git, and GitHub, including collaborative workflows and best practices.",
+        "modalDescription": "Training focused on Git version control, branch organization, merges, pull requests, and collaborative GitHub workflows.",
+        "topics": [
+          "Git",
+          "GitHub",
+          "Branches",
+          "Pull Requests",
+          "Workflow"
+        ]
+      },
+      "5": {
+        "title": "SQL and Databases",
+        "institution": "📚 Coursera",
+        "period": "2023",
+        "cardDescription": "Comprehensive course on SQL, data normalization, database design, and query optimization.",
+        "modalDescription": "Training focused on relational modeling, SQL queries, normalization, performance, and strong data persistence practices.",
+        "topics": [
+          "SQL",
+          "Relational Modeling",
+          "Normalization",
+          "Queries",
+          "Optimization"
+        ]
+      },
+      "6": {
+        "title": "Clean Code and SOLID Principles",
+        "institution": "📚 Pluralsight",
+        "period": "2024",
+        "cardDescription": "Course on programming best practices, design patterns, and SOLID principles for clean, maintainable code.",
+        "modalDescription": "Advanced study in readability, refactoring, object-oriented design, and applying SOLID principles in day-to-day development.",
+        "topics": [
+          "Clean Code",
+          "SOLID",
+          "Refactoring",
+          "Design",
+          "Best Practices"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "heading": "My Journey",
+    "modal": {
+      "label": "Professional Experience",
+      "close": "Close modal"
+    },
+    "items": {
+      "1": {
+        "period": "2022 - 2023",
+        "title": "Backend Freelancer",
+        "company": "Company X",
+        "cardDescription": "I worked as a backend developer using technologies such as Java, Spring, and Git.",
+        "modalDescription": "I worked as a backend developer on on-demand projects, building APIs, organizing business rules, and structuring delivery flows with consistency.",
+        "highlights": [
+          "Implemented APIs and business rules.",
+          "Used Git to organize version control and development flow.",
+          "Handled direct communication around project demands and adjustments."
+        ],
+        "tags": [
+          "Java",
+          "Spring",
+          "Git",
+          "Backend"
+        ]
+      },
+      "2": {
+        "period": "2023 - 2024",
+        "title": "Backend Developer",
+        "company": "Company Y",
+        "cardDescription": "I worked as a backend developer using technologies such as Java, Spring, and C++.",
+        "modalDescription": "I worked on structured backend solutions, integrating REST APIs, data persistence, and continuous code evolution.",
+        "highlights": [
+          "Developed RESTful APIs.",
+          "Integrated databases and optimized queries.",
+          "Implemented authentication and authorization flows."
+        ],
+        "tags": [
+          "Java",
+          "Spring",
+          "C++",
+          "SQL",
+          "Backend"
+        ]
+      },
+      "3": {
+        "period": "2024 - 2025",
+        "title": "Software Engineer",
+        "company": "Company Z",
+        "cardDescription": "I worked as a software engineer using technologies such as Python and Java.",
+        "modalDescription": "I worked on designing and evolving scalable solutions, contributing to technical decisions, code organization, and continuous process improvement.",
+        "highlights": [
+          "Built scalable solutions.",
+          "Applied agile development practices.",
+          "Collaborated technically with cross-functional teams."
+        ],
+        "tags": [
+          "Python",
+          "Java",
+          "SQL",
+          "Clean Code",
+          "Software Engineering"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "kicker": "Let's bring your idea to life",
+    "heading": "Your next system can start with a simple, strategic conversation.",
+    "intro": "If you need solid software, a reliable API, or a digital solution that generates better results for your business, I can help you build it with clarity, performance, and a strong focus on the end user.",
+    "cards": {
+      "linkedin": {
+        "title": "View my LinkedIn",
+        "label": "LinkedIn",
+        "description": "Connect with me and follow my professional journey."
+      },
+      "github": {
+        "title": "View my GitHub",
+        "label": "GitHub",
+        "description": "Explore my repositories, projects, and the way I build solutions."
+      },
+      "whatsapp": {
+        "title": "Talk to me on WhatsApp",
+        "label": "WhatsApp",
+        "description": "Reach out quickly for quotes, questions, and opportunities."
+      },
+      "email": {
+        "title": "Send an email",
+        "label": "Email",
+        "description": "Ideal for business proposals, technical details, and professional contact."
+      }
+    },
+    "footerNote": "Available for freelance work, independent projects, collaborations, and professional opportunities."
+  },
+  "footer": {
+    "copyright": "© 2026 João Victor. All rights reserved."
+  }
+}

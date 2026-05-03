@@ -16,15 +16,15 @@
     <!-- Navegação -->
     <nav>
         <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#education">Educação</a></li>
-            <li><a href="#experience">Experiências</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#home" data-i18n="nav.home">Início</a></li>
+            <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+            <li><a href="#education" data-i18n="nav.education">Educação</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experiências</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
             <li class="nav-btn lang-btn">
-                <button aria-label="Alterar idioma" aria-pressed="false" type="button"> 🇧🇷 </button>
+                <button id="lang-toggle" aria-label="Alterar idioma para inglês" aria-pressed="false" type="button">🌐 pt-BR</button>
             </li>
             <li class="nav-btn theme-btn">
                 <button id="theme-toggle" role="switch" aria-checked="false" aria-label="Ativar modo escuro">
@@ -37,7 +37,7 @@
                 </button>
             </li>
             <li class="nav-btn download-btn">
-                <a id="open-curriculum" href="curriculum-JoaoVictorGomesSoares.pdf" download>Acessar Currículo Virtual</a>
+                <a id="open-curriculum" href="curriculum-JoaoVictorGomesSoares.pdf" download data-i18n="nav.resume">Acessar Currículo Virtual</a>
             </li>
         </ul>
     </nav>
@@ -46,35 +46,35 @@
     <section id="home" class="hero">
         <!-- Conteúdo da seção Hero -->
         <div class="hero-content">
-            <h1 class="title">Programador Java | Spring Boot</h1>
-            <p class="subtitle">Desenvolvo Softwares que geram mais <strong>clientes</strong>, <br> mais <strong>vendas</strong> e mais <strong>visibilidade</strong> para seu negócios.</p>
-            <p class="name">João Victor Soares</p>
+            <h1 class="title" data-i18n="hero.title">Programador Java | Spring Boot</h1>
+            <p class="subtitle" data-i18n-html="hero.subtitle">Desenvolvo softwares que geram mais <strong>clientes</strong>, <br> mais <strong>vendas</strong> e mais <strong>visibilidade</strong> para o seu negócio.</p>
+            <p class="name" data-i18n="hero.name">João Victor Soares</p>
             <div class="hero-links">
-                <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="btn" title="GitHub">Acessar GitHub</a>
-                <a href="#contact" class="btn" title="Contato">Fale Comigo</a>
-                <a href="#projects" class="btn" title="Projetos">Ver Meus Projetos</a>
-                <a href="curriculum-JoaoVictorGomesSoares.pdf" class="btn" download title="Currículo">Baixar Currículo Virtual</a>
+                <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="btn" title="GitHub" data-i18n="hero.actions.github.label" data-i18n-title="hero.actions.github.title">Acessar GitHub</a>
+                <a href="#contact" class="btn" title="Contato" data-i18n="hero.actions.contact.label" data-i18n-title="hero.actions.contact.title">Fale Comigo</a>
+                <a href="#projects" class="btn" title="Projetos" data-i18n="hero.actions.projects.label" data-i18n-title="hero.actions.projects.title">Ver Meus Projetos</a>
+                <a href="curriculum-JoaoVictorGomesSoares.pdf" class="btn" download title="Currículo" data-i18n="hero.actions.resume.label" data-i18n-title="hero.actions.resume.title">Baixar Currículo Virtual</a>
             </div>
-            <h2>Principais  Tecnologias</h2>
+            <h2 data-i18n="hero.techHeading">Principais  Tecnologias</h2>
             <div class="hero-tech">
                 <div class="hero-marquee-infinity">
                     <ul class="tech-list">
-                        <li><span class="tech-item" title="Inteligências Artificiais"><img class="tech-img" src="assets/ai.png" alt="AiIcon"> I.A. </span></li>
-                        <li><span class="tech-item" title="Java"><img class="tech-img" src="assets/java.png" alt="JavaIcon"> Java</span></li>
-                        <li><span class="tech-item" title="SpringBoot"><img class="tech-img" src="assets/springboot.png" alt="SpringBootIcon"> Spring</span></li>
-                        <li><span class="tech-item" title="C++"><img class="tech-img" src="assets/c++.png" alt="C++Icon"> C++</span></li>
-                        <li><span class="tech-item" title="Git"><img class="tech-img" src="assets/git.png" alt="GitIcon"> Git</span></li>
-                        <li><span class="tech-item" title="MySQL"><img class="tech-img" src="assets/mysql.png" alt="MySQLIcon"> MySQL</span></li>
-                        <li><span class="tech-item" title="Linux"><img class="tech-img" src="assets/linux.png" alt="LinuxIcon"> Linux</span></li>
+                        <li><span class="tech-item" title="Inteligências Artificiais" data-i18n-title="hero.tech.ai"><img class="tech-img" src="assets/ai.png" alt="AiIcon"><span data-i18n="hero.tech.aiShort"> I.A. </span></span></li>
+                        <li><span class="tech-item" title="Java" data-i18n-title="hero.tech.java"><img class="tech-img" src="assets/java.png" alt="JavaIcon"> Java</span></li>
+                        <li><span class="tech-item" title="Spring Boot" data-i18n-title="hero.tech.spring"><img class="tech-img" src="assets/springboot.png" alt="SpringBootIcon"> Spring</span></li>
+                        <li><span class="tech-item" title="C++" data-i18n-title="hero.tech.cpp"><img class="tech-img" src="assets/c++.png" alt="C++Icon"> C++</span></li>
+                        <li><span class="tech-item" title="Git" data-i18n-title="hero.tech.git"><img class="tech-img" src="assets/git.png" alt="GitIcon"> Git</span></li>
+                        <li><span class="tech-item" title="MySQL" data-i18n-title="hero.tech.mysql"><img class="tech-img" src="assets/mysql.png" alt="MySQLIcon"> MySQL</span></li>
+                        <li><span class="tech-item" title="Linux" data-i18n-title="hero.tech.linux"><img class="tech-img" src="assets/linux.png" alt="LinuxIcon"> Linux</span></li>
                     </ul>
                     <ul class="tech-list" aria-hidden="true">
-                        <li><span class="tech-item" title="Inteligências Artificiais"><img class="tech-img" src="assets/ai.png" alt="AiIcon"> I.A. </span></li>
-                        <li><span class="tech-item" title="Java"><img class="tech-img" src="assets/java.png" alt="JavaIcon"> Java</span></li>
-                        <li><span class="tech-item" title="SpringBoot"><img class="tech-img" src="assets/springboot.png" alt="SpringBootIcon"> Spring</span></li>
-                        <li><span class="tech-item" title="C++"><img class="tech-img" src="assets/c++.png" alt="C++Icon"> C++</span></li>
-                        <li><span class="tech-item" title="Git"><img class="tech-img" src="assets/git.png" alt="GitIcon"> Git</span></li>
-                        <li><span class="tech-item" title="MySQL"><img class="tech-img" src="assets/mysql.png" alt="MySQLIcon"> MySQL</span></li>
-                        <li><span class="tech-item" title="Linux"><img class="tech-img" src="assets/linux.png" alt="LinuxIcon"> Linux</span></li>
+                        <li><span class="tech-item" title="Inteligências Artificiais" data-i18n-title="hero.tech.ai"><img class="tech-img" src="assets/ai.png" alt="AiIcon"><span data-i18n="hero.tech.aiShort"> I.A. </span></span></li>
+                        <li><span class="tech-item" title="Java" data-i18n-title="hero.tech.java"><img class="tech-img" src="assets/java.png" alt="JavaIcon"> Java</span></li>
+                        <li><span class="tech-item" title="Spring Boot" data-i18n-title="hero.tech.spring"><img class="tech-img" src="assets/springboot.png" alt="SpringBootIcon"> Spring</span></li>
+                        <li><span class="tech-item" title="C++" data-i18n-title="hero.tech.cpp"><img class="tech-img" src="assets/c++.png" alt="C++Icon"> C++</span></li>
+                        <li><span class="tech-item" title="Git" data-i18n-title="hero.tech.git"><img class="tech-img" src="assets/git.png" alt="GitIcon"> Git</span></li>
+                        <li><span class="tech-item" title="MySQL" data-i18n-title="hero.tech.mysql"><img class="tech-img" src="assets/mysql.png" alt="MySQLIcon"> MySQL</span></li>
+                        <li><span class="tech-item" title="Linux" data-i18n-title="hero.tech.linux"><img class="tech-img" src="assets/linux.png" alt="LinuxIcon"> Linux</span></li>
                     </ul>
                 </div>
             </div>
@@ -115,13 +115,13 @@
     <!-- Seção Sobre -->
     <section id="about" class="about">
         <div class="container">
-            <h2>Sobre Mim</h2>
+            <h2 data-i18n="about.heading">Sobre Mim</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Quem sou eu?</h3>                   
+                    <h3 data-i18n="about.whoHeading">Quem sou eu?</h3>
                     <div class="about-expandable-item" id="para1" role="region" aria-hidden="true">
-                        <p>
-                            Sou um Programador Back-End, possuo experiências em tecnologias como <strong>Java</strong>, <strong>Springboot</strong>, <strong>Git</strong> e <strong>DataBases</strong>, gosto de transformar ideias em soluções práticas e funcionais. Possuo 1,5 anos de experiência 
+                        <p data-i18n-html="about.whoBody">
+                            Sou um Programador Back-End, possuo experiências em tecnologias como <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Git</strong> e <strong>bancos de dados</strong>, gosto de transformar ideias em soluções práticas e funcionais. Possuo 1,5 anos de experiência
                             <br>
                             <br>
                             Trabalho com tecnologias modernas e estou sempre aprendendo coisas novas. Meu objetivo é criar aplicações que não apenas funcionem bem, mas que também proporcione uma experiência excepcional ao usuário.
@@ -130,11 +130,11 @@
                             Atualmente tenho trabalhado no meu desenvolvimento como um programador Back-End, diariamente estudo novas tecnologias e desenvolvo projetos práticos, quando não estou programando, gosto de contribuir para a comunidade dev e explorar novos frameworks e ferramentas.
                         </p>
                     </div>
-                    <button class="expand-btn" data-target="para1" aria-expanded="false" aria-controls="para1"></button>                   
-                    <h3>O que eu faço?</h3>
+                    <button class="expand-btn" data-target="para1" aria-expanded="false" aria-controls="para1" type="button"></button>
+                    <h3 data-i18n="about.doHeading">O que eu faço?</h3>
                     <div class="about-expandable-item" id="para2" role="region" aria-hidden="true">
-                        <p>
-                            Atuo principalmente como Programador <strong>Java</strong> e sou capacitado na construção de <strong>APIs RESTful</strong> robustas, escaláveis e seguras, utilizando <strong>Java</strong> e <strong>Spring Boot</strong> como principais tecnologias. Trabalho com foco em desempenho, manutenibilidade e organizaçã do código, aplicando princípios de arquitetura limpa, solida, em camadas e boas práticas de desenvolvimento.
+                        <p data-i18n-html="about.doBody">
+                            Atuo principalmente como Programador <strong>Java</strong> e sou capacitado na construção de <strong>APIs RESTful</strong> robustas, escaláveis e seguras, utilizando <strong>Java</strong> e <strong>Spring Boot</strong> como principais tecnologias. Trabalho com foco em desempenho, manutenibilidade e organização do código, aplicando princípios de arquitetura limpa, sólida, em camadas e boas práticas de desenvolvimento.
                             <br>
                             <br>
                             Realizo a integração de aplicações com <strong>bancos de dados</strong> relacionais, atuando na modelagem de dados, definição de entidades, mapeamento ORM e escrita de consultas eficientes. Busco sempre garantir a integridade, consistência e performance dos dados, atendendo às regras de negócio e requisitos técnicos do sistema.
@@ -143,10 +143,10 @@
                             Além do desenvolvimento, dedico-me à evolução contínua do código e da arquitetura, realizando refatorações, melhorias técnicas e estudos constantes de novas tecnologias e frameworks. Meu objetivo é entregar soluções estáveis, escaláveis e alinhadas às necessidades do usuário final e do negócio.
                         </p>
                     </div>
-                    <button class="expand-btn" data-target="para2" aria-expanded="false" aria-controls="para2"></button>
-                    <h3>O que eu já fiz?</h3>
+                    <button class="expand-btn" data-target="para2" aria-expanded="false" aria-controls="para2" type="button"></button>
+                    <h3 data-i18n="about.doneHeading">O que eu já fiz?</h3>
                     <div class="about-expandable-item" id="para3" role="region" aria-hidden="true">
-                        <p>
+                        <p data-i18n-html="about.doneBody">
                             Desenvolvi diversas aplicações back-end utilizando <strong>Java</strong> e <strong>Spring Boot</strong>, com foco na criação de <strong>APIs REST</strong> bem estruturadas, seguindo padrões de projeto e boas práticas. Atuei na implementação de endpoints, validações, tratamento de exceções e regras de negócio, garantindo aplicações confiáveis e bem organizadas.
                             <br>
                             <br>
@@ -156,14 +156,14 @@
                             Participei do desenvolvimento de projetos práticos e sistemas completos, utilizando <strong>Git</strong> para versionamento de código e organização do fluxo de desenvolvimento. Essas experiências fortaleceram minha capacidade de resolver problemas, evoluir tecnicamente e aplicar soluções modernas no desenvolvimento <strong>back-end</strong>.                        
                         </p>
                     </div>
-                    <button class="expand-btn" data-target="para3" aria-expanded="false" aria-controls="para3"></button>
-                    <h3>Idiomas</h3>
-                    <p> Português (Nativo) | Inglês (Fluente) </p>
-                    <h3>Formação Acadêmica</h3>
-                    <p> Bacharel em Ciência da Computação - Universidade Federal Fluminense (UFF) - 2026-2030 </p>
+                    <button class="expand-btn" data-target="para3" aria-expanded="false" aria-controls="para3" type="button"></button>
+                    <h3 data-i18n="about.languagesHeading">Idiomas</h3>
+                    <p data-i18n="about.languagesBody"> Português (Nativo) | Inglês (Fluente) </p>
+                    <h3 data-i18n="about.academicHeading">Formação Acadêmica</h3>
+                    <p data-i18n="about.academicBody"> Bacharel em Ciência da Computação - Universidade Federal Fluminense (UFF) - 2026-2030 </p>
                 </div>
                 <div class="about-image">
-                    <img id="avatar" src="assets/avatar1.png" alt="avatar do João Victor">
+                    <img id="avatar" src="assets/avatar1.png" alt="avatar do João Victor" data-i18n-alt="about.avatarAlt">
                 </div>
             </div>
         </div>
@@ -172,19 +172,19 @@
         <!-- Seção Projetos -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Meus Projetos</h2>
+            <h2 data-i18n="projects.heading">Meus Projetos</h2>
             <div class="projects-grid">
                 <div class="project-card" data-project-id="1">
                     <div class="project-image">
                         <img src="assets/DEMANDS-project-img.png" alt="DEMANDS">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">Organize tarefas de equipes</h3>
-                        <h3 style="font-size: 0.8rem;">DEMANDS</h3>
-                        <p>Uma aplicação planejada para auxiliar grandes equipes a organizar demandas, prioridades, prazos e o alinhamento do trabalho.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.1.subtitle">Organize tarefas de equipes</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.1.name">DEMANDS</h3>
+                        <p data-i18n="projects.items.1.cardDescription">Uma aplicação planejada para auxiliar grandes equipes a organizar demandas, prioridades, prazos e o alinhamento do trabalho.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="1" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares/DevTrack" target="_blank" class="project-action-btn project-repo-btn" data-project-id="1" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="1" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares/DevTrack" target="_blank" class="project-action-btn project-repo-btn" data-project-id="1" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
@@ -193,110 +193,110 @@
                         <img src="assets/GLASSES-project-img.png" alt="GLASSES">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">E-commerce de Óculos</h3>
-                        <h3 style="font-size: 0.8rem;">GLASSES</h3>
-                        <p>Um e-commerce de Óculos com catálogo de produtos, autenticação de usuário, carrinho de compras e integração com APIs.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.2.subtitle">E-commerce de Óculos</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.2.name">GLASSES</h3>
+                        <p data-i18n="projects.items.2.cardDescription">Um e-commerce de Óculos com catálogo de produtos, autenticação de usuário, carrinho de compras e integração com APIs.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="2" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="2" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="2" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="2" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-project-id="3">
                     <div class="project-image">
-                        <img src="assets/WallpaperProject.png" alt="Projeto 3">
+                        <img src="assets/WallpaperProject.png" alt="Stell Fighters">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">Jogo interativo</h3>
-                        <h3 style="font-size: 0.8rem;">Stell Fighters</h3>
-                        <p>Um jogo interativo desenvolvido com Java. Oferece uma experiência divertida e desafiadora com mecânicas bem pensadas.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.3.subtitle">Jogo interativo</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.3.name">Stell Fighters</h3>
+                        <p data-i18n="projects.items.3.cardDescription">Um jogo interativo desenvolvido com Java. Oferece uma experiência divertida e desafiadora com mecânicas bem pensadas.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="3" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="3" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="3" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="3" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-project-id="4">
                     <div class="project-image">
-                        <img src="assets/WallpaperProject.png" alt="Projeto 4">
+                        <img src="assets/WallpaperProject.png" alt="AUTH SERVER">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">Sistema de Autenticação e Autorização</h3>
-                        <h3 style="font-size: 0.8rem;">AUTH SERVER</h3>
-                        <p>API responsável por autenticação segura de usuários, utilizando JWT, controle de roles e permissões, seguindo boas práticas de segurança com Spring Security.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.4.subtitle">Sistema de Autenticação e Autorização</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.4.name">AUTH SERVER</h3>
+                        <p data-i18n="projects.items.4.cardDescription">API responsável por autenticação segura de usuários, utilizando JWT, controle de roles e permissões, seguindo boas práticas de segurança com Spring Security.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="4" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="4" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="4" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="4" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-project-id="5">
                     <div class="project-image">
-                        <img src="assets/WallpaperProject.png" alt="Projeto 5">
+                        <img src="assets/WallpaperProject.png" alt="FINTAB">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">API de Controle Financeiro</h3>
-                        <h3 style="font-size: 0.8rem;">FINTAB (App de finanças)</h3>
-                        <p>API REST para gerenciamento de finanças pessoais, com registro de receitas e despesas, categorização e cálculo automático de saldo.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.5.subtitle">API de Controle Financeiro</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.5.name">FINTAB (App de finanças)</h3>
+                        <p data-i18n="projects.items.5.cardDescription">API REST para gerenciamento de finanças pessoais, com registro de receitas e despesas, categorização e cálculo automático de saldo.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="5" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="5" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="5" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="5" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-project-id="6">
                     <div class="project-image">
-                        <img src="assets/WallpaperProject.png" alt="Projeto 6">
+                        <img src="assets/WallpaperProject.png" alt="AGENDA">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">Sistema de Agendamento de Serviços</h3>
-                        <h3 style="font-size: 0.8rem;">AGENDA (Dentista ou Esteticista)</h3>
-                        <p>Backend para agendamento de serviços, com controle de horários disponíveis, validação de conflitos e gerenciamento completo dos agendamentos.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.6.subtitle">Sistema de Agendamento de Serviços</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.6.name">AGENDA (Dentista ou Esteticista)</h3>
+                        <p data-i18n="projects.items.6.cardDescription">Backend para agendamento de serviços, com controle de horários disponíveis, validação de conflitos e gerenciamento completo dos agendamentos.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="6" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="6" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="6" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="6" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-project-id="7">
                     <div class="project-image">
-                        <img src="assets/WallpaperProject.png" alt="Projeto 7">
+                        <img src="assets/WallpaperProject.png" alt="CHATREPETECO">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">API de Chat em Tempo Real</h3>
-                        <h3 style="font-size: 0.8rem;">CHATREPETECO</h3>
-                        <p>Sistema de comunicação em tempo real utilizando WebSocket, permitindo conversas privadas ou em grupo com histórico de mensagens.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.7.subtitle">API de Chat em Tempo Real</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.7.name">CHATREPETECO</h3>
+                        <p data-i18n="projects.items.7.cardDescription">Sistema de comunicação em tempo real utilizando WebSocket, permitindo conversas privadas ou em grupo com histórico de mensagens.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="7" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="7" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="7" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="7" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-project-id="8">
                     <div class="project-image">
-                        <img src="assets/WallpaperProject.png" alt="Projeto 8">
+                        <img src="assets/WallpaperProject.png" alt="NOTIFICA">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">Sistema de Notificações (Microserviço)</h3>
-                        <h3 style="font-size: 0.8rem;">NOTIFICA</h3>
-                        <p>Microserviço para envio de notificações de forma assíncrona, utilizando filas para garantir desempenho, escalabilidade e tolerância a falhas.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.8.subtitle">Sistema de Notificações (Microserviço)</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.8.name">NOTIFICA</h3>
+                        <p data-i18n="projects.items.8.cardDescription">Microserviço para envio de notificações de forma assíncrona, utilizando filas para garantir desempenho, escalabilidade e tolerância a falhas.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="8" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="8" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="8" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="8" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card" data-project-id="9">
                     <div class="project-image">
-                        <img src="assets/WallpaperProject.png" alt="Projeto 9">
+                        <img src="assets/WallpaperProject.png" alt="AUDITORIA">
                     </div>
                     <div class="project-content">
-                        <h3 style="margin-bottom: 0;">API de Gestão de Usuários e Logs</h3>
-                        <h3 style="font-size: 0.8rem;">AUDITORIA</h3>
-                        <p>API corporativa para gerenciamento de usuários com registro de ações, auditoria completa e rastreabilidade das operações do sistema.</p>
+                        <h3 style="margin-bottom: 0;" data-i18n="projects.items.9.subtitle">API de Gestão de Usuários e Logs</h3>
+                        <h3 style="font-size: 0.8rem;" data-i18n="projects.items.9.name">AUDITORIA</h3>
+                        <p data-i18n="projects.items.9.cardDescription">API corporativa para gerenciamento de usuários com registro de ações, auditoria completa e rastreabilidade das operações do sistema.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="9" title="Ver projeto em produção">Ver deploy</a>
-                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="9" title="Ver repositório no GitHub">Ver repositório</a>
+                            <a href="#" class="project-action-btn project-deploy-btn" data-project-id="9" title="Ver projeto em produção" data-i18n="projects.actions.deploy.label" data-i18n-title="projects.actions.deploy.title">Ver deploy</a>
+                            <a href="https://github.com/JoaoVictorGomesSoares" target="_blank" class="project-action-btn project-repo-btn" data-project-id="9" title="Ver repositório no GitHub" data-i18n="projects.actions.repo.label" data-i18n-title="projects.actions.repo.title">Ver repositório</a>
                         </div>
                     </div>
                 </div>
@@ -307,117 +307,117 @@
     <!-- Seção Habilidades -->
     <section id="skills" class="skills">
         <div class="skill-content">
-            <h3>Principais Stacks</h3>
+            <h3 data-i18n="skills.mainHeading">Principais Stacks</h3>
             <div class="skill-techs">
                 <div class="skill-card">
                     <img class="skill-image" src="assets/java.png" alt="Java">
-                    <h4>Java</h4>
-                    <p class="skill-description">Linguagem de programação orientada a objetos</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.java.name">Java</h4>
+                    <p class="skill-description" data-i18n="skills.items.java.description">Linguagem de programação orientada a objetos</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/springboot.png" alt="SpringBoot">
-                    <h4>Spring Boot</h4>
-                    <p class="skill-description">Framework para desenvolvimento de aplicações Java</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.springBoot.name">Spring Boot</h4>
+                    <p class="skill-description" data-i18n="skills.items.springBoot.description">Framework para desenvolvimento de aplicações Java</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/git.png" alt="Git">
-                    <h4>Git</h4>
-                    <p class="skill-description">Sistema de controle de versão distribuído</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.git.name">Git</h4>
+                    <p class="skill-description" data-i18n="skills.items.git.description">Sistema de controle de versão distribuído</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/mysql.png" alt="MySQL">
-                    <h4>MySQL</h4>
-                    <p class="skill-description">Sistema de gerenciamento de banco de dados</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.mysql.name">MySQL</h4>
+                    <p class="skill-description" data-i18n="skills.items.mysql.description">Sistema de gerenciamento de banco de dados</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
             </div>
-            <h3>Outras Stacks</h3>
+            <h3 data-i18n="skills.otherHeading">Outras Stacks</h3>
             <div class="skill-techs">
                 <div class="skill-card">
                     <img class="skill-image" src="assets/c++.png" alt="C++">
-                    <h4>C++</h4>
-                    <p class="skill-description">Linguagem de programação de baixo nível</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.cpp.name">C++</h4>
+                    <p class="skill-description" data-i18n="skills.items.cpp.description">Linguagem de programação de baixo nível</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/python.png" alt="Python">
-                    <h4>Python</h4>
-                    <p class="skill-description">Linguagem de programação interpretada</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.python.name">Python</h4>
+                    <p class="skill-description" data-i18n="skills.items.python.description">Linguagem de programação interpretada</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/typescript.png" alt="TypeScript">
-                    <h4>TypeScript</h4>
-                    <p class="skill-description">Linguagem de programação orientada a objetos</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.typeScript.name">TypeScript</h4>
+                    <p class="skill-description" data-i18n="skills.items.typeScript.description">Linguagem de programação orientada a objetos</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/javascript.png" alt="JavaScript">
-                    <h4>JavaScript</h4>
-                    <p class="skill-description">Linguagem de programação interpretada</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.javaScript.name">JavaScript</h4>
+                    <p class="skill-description" data-i18n="skills.items.javaScript.description">Linguagem de programação interpretada</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/html5.png" alt="HTML">
-                    <h4>HTML</h4>
-                    <p class="skill-description">Linguagem de marcação para criação de páginas web</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.html.name">HTML</h4>
+                    <p class="skill-description" data-i18n="skills.items.html.description">Linguagem de marcação para criação de páginas web</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/css3.png" alt="CSS">
-                    <h4>CSS</h4>
-                    <p class="skill-description">Linguagem de estilo para definição da apresentação de páginas web</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.css.name">CSS</h4>
+                    <p class="skill-description" data-i18n="skills.items.css.description">Linguagem de estilo para definição da apresentação de páginas web</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/ai.png" alt="I.A.">
-                    <h4>I.A.</h4>
-                    <p class="skill-description">Inteligência Artificial</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.ai.name">I.A.</h4>
+                    <p class="skill-description" data-i18n="skills.items.ai.description">Inteligência Artificial</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
                 <div class="skill-card">
                     <img class="skill-image" src="assets/linux.png" alt="Linux">
-                    <h4>Linux</h4>
-                    <p class="skill-description">Sistema operacional de código aberto</p>
-                    <p class="skill-experience">possuo 1,5 anos de experiência com essa tecnologia</p>
+                    <h4 data-i18n="skills.items.linux.name">Linux</h4>
+                    <p class="skill-description" data-i18n="skills.items.linux.description">Sistema operacional de código aberto</p>
+                    <p class="skill-experience" data-i18n="skills.experienceLabel">possuo 1,5 anos de experiência com essa tecnologia</p>
                 </div>
             </div>
-            <h3>Soft Skills</h3>
+            <h3 data-i18n="skills.softHeading">Soft Skills</h3>
             <div class="skill-techs">
                 <div class="skill-card">
-                    <h4>Comunicação Eficaz</h4>
-                    <p class="skill-description">Capacidade de se comunicar de forma clara e eficaz, tanto oral quanto por escrito.</p>
+                    <h4 data-i18n="skills.softItems.communication.title">Comunicação Eficaz</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.communication.description">Capacidade de se comunicar de forma clara e eficaz, tanto oral quanto por escrito.</p>
                 </div>
                 <div class="skill-card">
-                    <h4>Trabalho em Equipe</h4>
-                    <p class="skill-description">Habilidade de colaborar efetivamente com colegas de equipe, compartilhando conhecimentos e contribuindo para o sucesso do projeto.</p>
+                    <h4 data-i18n="skills.softItems.teamwork.title">Trabalho em Equipe</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.teamwork.description">Habilidade de colaborar efetivamente com colegas de equipe, compartilhando conhecimentos e contribuindo para o sucesso do projeto.</p>
                 </div>
                 <div class="skill-card">
-                    <h4>Resolução de Problemas</h4>
-                    <p class="skill-description">Capacidade de identificar, analisar e resolver problemas de forma eficiente e criativa.</p>
+                    <h4 data-i18n="skills.softItems.problemSolving.title">Resolução de Problemas</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.problemSolving.description">Capacidade de identificar, analisar e resolver problemas de forma eficiente e criativa.</p>
                 </div>
                 <div class="skill-card">
-                    <h4>Adaptabilidade</h4>
-                    <p class="skill-description">Habilidade de se adaptar a mudanças, aprender novas tecnologias e enfrentar desafios de forma positiva.</p>
+                    <h4 data-i18n="skills.softItems.adaptability.title">Adaptabilidade</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.adaptability.description">Habilidade de se adaptar a mudanças, aprender novas tecnologias e enfrentar desafios de forma positiva.</p>
                 </div>
                 <div class="skill-card">
-                    <h4>Desenvolvimento de APIs RESTful</h4>
-                    <p class="skill-description">Criação de APIs robustas e escaláveis utilizando Java e Spring Boot.</p>
+                    <h4 data-i18n="skills.softItems.restApis.title">Desenvolvimento de APIs RESTful</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.restApis.description">Criação de APIs robustas e escaláveis utilizando Java e Spring Boot.</p>
                 </div>
                 <div class="skill-card">
-                    <h4>Modelagem e Manipulação de Bancos de Dados</h4>
-                    <p class="skill-description">Experiência na modelagem de dados, criação de tabelas e consultas SQL eficientes.</p>
+                    <h4 data-i18n="skills.softItems.databases.title">Modelagem e Manipulação de Bancos de Dados</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.databases.description">Experiência na modelagem de dados, criação de tabelas e consultas SQL eficientes.</p>
                 </div>
                 <div class="skill-card">
-                    <h4>Versionamento de Código com Git</h4>
-                    <p class="skill-description">Utilização de Git para controle de versão, colaboração e organização do fluxo de desenvolvimento.</p>
+                    <h4 data-i18n="skills.softItems.gitWorkflow.title">Versionamento de Código com Git</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.gitWorkflow.description">Utilização de Git para controle de versão, colaboração e organização do fluxo de desenvolvimento.</p>
                 </div>
                 <div class="skill-card">
-                    <h4>Programação Orientada a Objetos</h4>
-                    <p class="skill-description">Conhecimento e aplicação dos princípios da programação orientada a objetos, incluindo encapsulamento, herança e polimorfismo.</p>
+                    <h4 data-i18n="skills.softItems.oop.title">Programação Orientada a Objetos</h4>
+                    <p class="skill-description" data-i18n="skills.softItems.oop.description">Conhecimento e aplicação dos princípios da programação orientada a objetos, incluindo encapsulamento, herança e polimorfismo.</p>
                 </div>
             </div>
         </div>
@@ -426,66 +426,66 @@
         <!-- Seção Educação -->
     <section id="education" class="education">
         <div class="container">
-            <h2>Educação</h2>
+            <h2 data-i18n="education.heading">Educação</h2>
             <div class="education-grid">
                 <div class="education-card degree" data-education-id="1">
                     <div class="education-icon">🎓</div>
                     <div class="education-content">
-                        <h3>Bacharelado em Ciência da Computação</h3>
-                        <p class="education-institution">📚 Universidade Federal Fluminense (UFF)</p>
-                        <p class="education-period">2026 - 2030</p>
-                        <p class="education-description">Formação completa em Ciência da Computação com ênfase em desenvolvimento de software, algoritmos, estruturas de dados e engenharia de software.</p>
-                        <button class="education-btn" data-education-id="1">Cursando ...</button>
+                        <h3 data-i18n="education.items.1.title">Bacharelado em Ciência da Computação</h3>
+                        <p class="education-institution" data-i18n="education.items.1.institution">📚 Universidade Federal Fluminense (UFF)</p>
+                        <p class="education-period" data-i18n="education.items.1.period">2026 - 2030</p>
+                        <p class="education-description" data-i18n="education.items.1.cardDescription">Formação completa em Ciência da Computação com ênfase em desenvolvimento de software, algoritmos, estruturas de dados e engenharia de software.</p>
+                        <button class="education-btn" data-education-id="1" data-i18n="education.actions.current" type="button">Cursando ...</button>
                     </div>
                 </div>
                 <div class="education-card certification" data-education-id="2">
                     <div class="education-icon">📜</div>
                     <div class="education-content">
-                        <h3>Spring Boot Essentials</h3>
-                        <p class="education-institution">📖 Udemy</p>
-                        <p class="education-period">2024</p>
-                        <p class="education-description">Certificação em desenvolvimento com Spring Boot, cobrindo REST APIs, JPA, Hibernate e padrões de design.</p>
-                        <button class="education-btn" data-education-id="2">Ver certificados</button>
+                        <h3 data-i18n="education.items.2.title">Spring Boot Essentials</h3>
+                        <p class="education-institution" data-i18n="education.items.2.institution">📖 Udemy</p>
+                        <p class="education-period" data-i18n="education.items.2.period">2024</p>
+                        <p class="education-description" data-i18n="education.items.2.cardDescription">Certificação em desenvolvimento com Spring Boot, cobrindo REST APIs, JPA, Hibernate e padrões de design.</p>
+                        <button class="education-btn" data-education-id="2" data-i18n="education.actions.certificates" type="button">Ver certificados</button>
                     </div>
                 </div>
                 <div class="education-card certification" data-education-id="3">
                     <div class="education-icon">📜</div>
                     <div class="education-content">
-                        <h3>Java Advanced Programming</h3>
-                        <p class="education-institution">📖 Alura</p>
-                        <p class="education-period">2023</p>
-                        <p class="education-description">Certificação avançada em Java, explorando programação orientada a objetos, collections, streams e multithreading.</p>
-                        <button class="education-btn" data-education-id="3">Ver certificados</button>
+                        <h3 data-i18n="education.items.3.title">Java Advanced Programming</h3>
+                        <p class="education-institution" data-i18n="education.items.3.institution">📖 Alura</p>
+                        <p class="education-period" data-i18n="education.items.3.period">2023</p>
+                        <p class="education-description" data-i18n="education.items.3.cardDescription">Certificação avançada em Java, explorando programação orientada a objetos, collections, streams e multithreading.</p>
+                        <button class="education-btn" data-education-id="3" data-i18n="education.actions.certificates" type="button">Ver certificados</button>
                     </div>
                 </div>
                 <div class="education-card course" data-education-id="4">
                     <div class="education-icon">💻</div>
                     <div class="education-content">
-                        <h3>Git e GitHub Completo</h3>
-                        <p class="education-institution">📚 Udemy</p>
-                        <p class="education-period">2023</p>
-                        <p class="education-description">Curso completo sobre versionamento de códigos, Git e GitHub, incluindo workflows colaborativos e boas práticas.</p>
-                        <button class="education-btn" data-education-id="4">Ver certificados</button>
+                        <h3 data-i18n="education.items.4.title">Git e GitHub Completo</h3>
+                        <p class="education-institution" data-i18n="education.items.4.institution">📚 Udemy</p>
+                        <p class="education-period" data-i18n="education.items.4.period">2023</p>
+                        <p class="education-description" data-i18n="education.items.4.cardDescription">Curso completo sobre versionamento de códigos, Git e GitHub, incluindo workflows colaborativos e boas práticas.</p>
+                        <button class="education-btn" data-education-id="4" data-i18n="education.actions.certificates" type="button">Ver certificados</button>
                     </div>
                 </div>
                 <div class="education-card course" data-education-id="5">
                     <div class="education-icon">💻</div>
                     <div class="education-content">
-                        <h3>SQL e Banco de Dados</h3>
-                        <p class="education-institution">📚 Coursera</p>
-                        <p class="education-period">2023</p>
-                        <p class="education-description">Curso abrangente sobre SQL, normalização de dados, design de banco de dados e otimização de queries.</p>
-                        <button class="education-btn" data-education-id="5">Ver certificados</button>
+                        <h3 data-i18n="education.items.5.title">SQL e Banco de Dados</h3>
+                        <p class="education-institution" data-i18n="education.items.5.institution">📚 Coursera</p>
+                        <p class="education-period" data-i18n="education.items.5.period">2023</p>
+                        <p class="education-description" data-i18n="education.items.5.cardDescription">Curso abrangente sobre SQL, normalização de dados, design de banco de dados e otimização de queries.</p>
+                        <button class="education-btn" data-education-id="5" data-i18n="education.actions.certificates" type="button">Ver certificados</button>
                     </div>
                 </div>
                 <div class="education-card course" data-education-id="6">
                     <div class="education-icon">💻</div>
                     <div class="education-content">
-                        <h3>Clean Code e SOLID Principles</h3>
-                        <p class="education-institution">📚 Pluralsight</p>
-                        <p class="education-period">2024</p>
-                        <p class="education-description">Curso sobre melhores práticas de programação, padrões de design e princípios SOLID para código limpo e manutenível.</p>
-                        <button class="education-btn" data-education-id="6">Ver certificados</button>
+                        <h3 data-i18n="education.items.6.title">Clean Code e SOLID Principles</h3>
+                        <p class="education-institution" data-i18n="education.items.6.institution">📚 Pluralsight</p>
+                        <p class="education-period" data-i18n="education.items.6.period">2024</p>
+                        <p class="education-description" data-i18n="education.items.6.cardDescription">Curso sobre melhores práticas de programação, padrões de design e princípios SOLID para código limpo e manutenível.</p>
+                        <button class="education-btn" data-education-id="6" data-i18n="education.actions.certificates" type="button">Ver certificados</button>
                     </div>
                 </div>
             </div>
@@ -495,7 +495,7 @@
         <!-- Seção Experiências Profissionais -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2>Minha Jornada</h2>
+            <h2 data-i18n="experience.heading">Minha Jornada</h2>
             <!-- Linha do tempo horizontal para experiências profissionais -->
             <div class="timeline-horizontal">
                 <!-- Essa div representa a Linha -->
@@ -503,28 +503,28 @@
                 <!-- Cada item representa uma experiências profissional -->
                 <div class="timeline-item" data-experience-id="1">
                     <button class="timeline-preview" data-experience-id="1">
-                        <span class="timeline-period">2022 - 2023</span>
-                        <strong>Freelancer - Backend</strong>
-                        <small>Empresa X</small>
-                        <p class="timeline-description">Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e Git..</p>
+                        <span class="timeline-period" data-i18n="experience.items.1.period">2022 - 2023</span>
+                        <strong data-i18n="experience.items.1.title">Freelancer - Backend</strong>
+                        <small data-i18n="experience.items.1.company">Empresa X</small>
+                        <p class="timeline-description" data-i18n="experience.items.1.cardDescription">Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e Git.</p>
                     </button>
                     <div class="timeline-marker"></div>
                 </div>
                 <div class="timeline-item" data-experience-id="2">
                     <button class="timeline-preview" data-experience-id="2">
-                        <span class="timeline-period">2023 - 2024</span>
-                        <strong>Desenvolvedor Backend</strong>
-                        <small>Empresa Y</small>
-                        <p class="timeline-description">Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e C++.</p>
+                        <span class="timeline-period" data-i18n="experience.items.2.period">2023 - 2024</span>
+                        <strong data-i18n="experience.items.2.title">Desenvolvedor Backend</strong>
+                        <small data-i18n="experience.items.2.company">Empresa Y</small>
+                        <p class="timeline-description" data-i18n="experience.items.2.cardDescription">Atuei como desenvolvedor Backend, trabalhando com tecnologias como Java, Spring e C++.</p>
                     </button>
                     <div class="timeline-marker"></div>
                 </div>
                 <div class="timeline-item" data-experience-id="3">
                     <button class="timeline-preview" data-experience-id="3">
-                        <span class="timeline-period">2024 - 2025</span>
-                        <strong>Engenheiro de Software</strong>
-                        <small>Empresa Z</small>
-                        <p class="timeline-description">Atuei como engenheiro de software, trabalhando com tecnologias como Python e Java.</p>
+                        <span class="timeline-period" data-i18n="experience.items.3.period">2024 - 2025</span>
+                        <strong data-i18n="experience.items.3.title">Engenheiro de Software</strong>
+                        <small data-i18n="experience.items.3.company">Empresa Z</small>
+                        <p class="timeline-description" data-i18n="experience.items.3.cardDescription">Atuei como engenheiro de software, trabalhando com tecnologias como Python e Java.</p>
                     </button>
                     <div class="timeline-marker"></div>
                 </div>
@@ -536,30 +536,30 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-hero-copy">
-                <span class="contact-kicker">Vamos tirar sua ideia do papel</span>
-                <h2 class="contact-h2">Seu proximo sistema pode começar com uma conversa simples e estratégica.</h2>
-                <p class="contact-intro">Se você precisa de um Software sólido, uma API confiável ou uma solução digital que gere mais resultado para o seu negócio, eu posso te ajudar a construir isso com clareza, performance e foco no cliente final.</p>
+                <span class="contact-kicker" data-i18n="contact.kicker">Vamos tirar sua ideia do papel</span>
+                <h2 class="contact-h2" data-i18n="contact.heading">Seu próximo sistema pode começar com uma conversa simples e estratégica.</h2>
+                <p class="contact-intro" data-i18n="contact.intro">Se você precisa de um Software sólido, uma API confiável ou uma solução digital que gere mais resultado para o seu negócio, eu posso te ajudar a construir isso com clareza, performance e foco no cliente final.</p>
             </div>
             <div class="contact-card-grid">
-                <a class="contact-card" title="Veja meu LinkedIn" href="https://www.linkedin.com/in/joaovictorgomessoares/" target="_blank">
+                <a class="contact-card" title="Veja meu LinkedIn" href="https://www.linkedin.com/in/joaovictorgomessoares/" target="_blank" data-i18n-title="contact.cards.linkedin.title">
                     <img class="contact-card-icon" src="assets/linkedin.png" alt="LinkedIn">
-                    <strong>LinkedIn</strong>
-                    <p>Conecte-se comigo e acompanhe minha jornada profissional.</p>
+                    <strong data-i18n="contact.cards.linkedin.label">LinkedIn</strong>
+                    <p data-i18n="contact.cards.linkedin.description">Conecte-se comigo e acompanhe minha jornada profissional.</p>
                 </a>
-                <a class="contact-card" title="Veja meu GitHub" href="https://github.com/JoaoVictorGomesSoares" target="_blank">
+                <a class="contact-card" title="Veja meu GitHub" href="https://github.com/JoaoVictorGomesSoares" target="_blank" data-i18n-title="contact.cards.github.title">
                     <img class="contact-card-icon" src="assets/github.png" alt="GitHub">
-                    <strong>GitHub</strong>
-                    <p>Veja meus repositórios, projetos e minha forma de desenvolver soluções.</p>
+                    <strong data-i18n="contact.cards.github.label">GitHub</strong>
+                    <p data-i18n="contact.cards.github.description">Veja meus repositórios, projetos e minha forma de desenvolver soluções.</p>
                 </a>
-                <a class="contact-card" title="Fale comigo pelo WhatsApp" href="https://wa.me/5522999092042" target="_blank">
+                <a class="contact-card" title="Fale comigo pelo WhatsApp" href="https://wa.me/5522999092042" target="_blank" data-i18n-title="contact.cards.whatsapp.title">
                     <img class="contact-card-icon" src="assets/whatsapp.png" alt="WhatsApp">
-                    <strong>WhatsApp</strong>
-                    <p>Fale comigo de forma rápida para orçamentos, dúvidas e oportunidades.</p>
+                    <strong data-i18n="contact.cards.whatsapp.label">WhatsApp</strong>
+                    <p data-i18n="contact.cards.whatsapp.description">Fale comigo de forma rápida para orçamentos, dúvidas e oportunidades.</p>
                 </a>
-                <a class="contact-card" title="Envie um e-mail" href="mailto:jvgssoares@gmail.com">
+                <a class="contact-card" title="Envie um e-mail" href="mailto:jvgssoares@gmail.com" data-i18n-title="contact.cards.email.title">
                     <img class="contact-card-icon" src="assets/email.png" alt="E-mail">
-                    <strong>E-mail</strong>
-                    <p>Ideal para propostas comerciais, detalhes técnicos e contatos profissionais.</p>
+                    <strong data-i18n="contact.cards.email.label">E-mail</strong>
+                    <p data-i18n="contact.cards.email.description">Ideal para propostas comerciais, detalhes técnicos e contatos profissionais.</p>
                 </a>
             </div>
             <div class="contact-direct-links">
@@ -567,52 +567,52 @@
                 <a href="https://wa.me/5522999092042" target="_blank">📱 (22) 99909-2042</a>
             </div>
             <div class="contact-footer-note">
-                <p>Atendimento aberto para freelancers, projetos autorais, colaborações e oportunidades profissionais.</p>
+                <p data-i18n="contact.footerNote">Atendimento aberto para freelancers, projetos autorais, colaborações e oportunidades profissionais.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 João Victor. Todos os direitos reservados.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 João Victor. Todos os direitos reservados.</p>
     </footer>
 
         <!-- Modal de Projeto -->
     <div id="project-modal" class="modal-overlay hidden">
         <div class="modal-content">
-            <button class="modal-close-btn" data-close-modal="project-modal">&times;</button>
+            <button class="modal-close-btn" data-close-modal="project-modal" aria-label="Fechar modal" data-i18n-aria-label="projects.modal.close" type="button">&times;</button>
             <div class="modal-body">
                 <div class="modal-sidebar">
                     <h2 id="project-modal-title"></h2>
                     <h3 id="project-modal-subtitle"></h3>
                     <div class="modal-details">
                         <section class="modal-section">
-                            <h3>Visão Geral</h3>
+                            <h3 data-i18n="projects.modal.overview">Visão Geral</h3>
                             <p id="project-modal-overview"></p>
                         </section>
                         <section class="modal-section">
-                            <h3>Funcionalidades Principais</h3>
+                            <h3 data-i18n="projects.modal.functionalities">Funcionalidades Principais</h3>
                             <ul id="project-modal-functionalities"></ul>
                         </section>
                         <section class="modal-section">
-                            <h3>Vantagens</h3>
+                            <h3 data-i18n="projects.modal.advantages">Vantagens</h3>
                             <ul id="project-modal-advantages"></ul>
                         </section>
                         <section class="modal-section">
-                            <h3>Especificações Técnicas</h3>
+                            <h3 data-i18n="projects.modal.specs">Especificações Técnicas</h3>
                             <p id="project-modal-specs"></p>
                         </section>
                         <section class="modal-section">
-                            <h3>Propósito</h3>
+                            <h3 data-i18n="projects.modal.purpose">Propósito</h3>
                             <p id="project-modal-purpose"></p>
                         </section>
                         <section class="modal-section">
-                            <h3>Tecnologias Envolvidas</h3>
+                            <h3 data-i18n="projects.modal.technologies">Tecnologias Envolvidas</h3>
                             <div id="project-modal-technologies" class="modal-tags"></div>
                         </section>
                         <div class="modal-actions modal-actions-double">
-                            <a id="project-modal-deploy-link" href="#" target="_blank" class="btn">Ver deploy</a>
-                            <a id="project-modal-repo-link" href="#" target="_blank" class="btn">Ver repositório</a>
+                            <a id="project-modal-deploy-link" href="#" target="_blank" class="btn" data-i18n="projects.modal.deploy">Ver deploy</a>
+                            <a id="project-modal-repo-link" href="#" target="_blank" class="btn" data-i18n="projects.modal.repo">Ver repositório</a>
                         </div>
                     </div>
                 </div>
@@ -626,10 +626,10 @@
     <!-- Modal de Educação -->
     <div id="education-modal" class="modal-overlay hidden">
         <div class="modal-content info-modal-content">
-            <button class="modal-close-btn" data-close-modal="education-modal">&times;</button>
+            <button class="modal-close-btn" data-close-modal="education-modal" aria-label="Fechar modal" data-i18n-aria-label="education.modal.close" type="button">&times;</button>
             <div class="modal-body info-modal-body">
                 <div class="modal-copy">
-                    <span class="info-modal-label">Formação e Certificados</span>
+                    <span class="info-modal-label" data-i18n="education.modal.label">Formação e Certificados</span>
                     <h2 id="education-modal-title"></h2>
                     <p id="education-modal-institution" class="info-modal-subtitle"></p>
                     <p id="education-modal-period" class="info-modal-meta"></p>
@@ -638,9 +638,9 @@
                 </div>
                 <div class="certificate-preview" id="education-certificate-preview">
                     <div class="certificate-placeholder">
-                        <span>Certificado</span>
-                        <strong>Preview indisponível</strong>
-                        <p>Adicione a imagem do certificado na pasta <code>assets</code> para exibição real neste modal.</p>
+                        <span data-i18n="education.modal.placeholderTitle">Certificado</span>
+                        <strong data-i18n="education.modal.placeholderSubtitle">Preview indisponível</strong>
+                        <p data-i18n-html="education.modal.placeholderBody">Adicione a imagem do certificado na pasta <code>assets</code> para exibição real neste modal.</p>
                     </div>
                 </div>
             </div>
@@ -650,10 +650,10 @@
     <!-- Modal de Experiência -->
     <div id="experience-modal" class="modal-overlay hidden">
         <div class="modal-content info-modal-content">
-            <button class="modal-close-btn" data-close-modal="experience-modal">&times;</button>
+            <button class="modal-close-btn" data-close-modal="experience-modal" aria-label="Fechar modal" data-i18n-aria-label="experience.modal.close" type="button">&times;</button>
             <div class="modal-body info-modal-body">
                 <div class="modal-copy">
-                    <span class="info-modal-label">Experiência Profissional</span>
+                    <span class="info-modal-label" data-i18n="experience.modal.label">Experiência Profissional</span>
                     <h2 id="experience-modal-title"></h2>
                     <p id="experience-modal-company" class="info-modal-subtitle"></p>
                     <p id="experience-modal-period" class="info-modal-meta"></p>
@@ -669,5 +669,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-

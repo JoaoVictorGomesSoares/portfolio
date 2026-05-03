@@ -1,16 +1,12 @@
-﻿/* ============================================================
-   BASE STYLES - RESET E VARIAVEIS GLOBAIS
-   ============================================================ */
+﻿/* === BASE STYLES - RESET E VARIAVEIS GLOBAIS === */
 
 :root {
-    /* ============================================================
-        VARIAVEIS GLOBAIS
-    ============================================================ */
+    /* === VARIAVEIS GLOBAIS === */
 
     /* Color basic */
     --color-black-dk: #0d1117;
     --color-black-md: #0f172a;
-    --color-black-lt: #0b1e38;
+    --color-black-lt: #151d2994;
 
     --color-gray-dk: #242135;
     --color-gray-md: #3d3e56;
@@ -89,132 +85,185 @@
     --breakpoint-xl: 1200px;
     --breakpoint-2xl: 1400px;
 
-    /* ============================================================
-        Tema Claro
-    ============================================================ */
+    /* === Sistema de Cores - Paleta Baseada no Azul Primário === */
 
-    /* Colors - Professional Palette */
-    --color-blue-dk: #1e3a5f;
-    --color-blue-md: #296aca;
-    --color-blue-lt: #4da3ff;
+    /* Azul Primário (inalterado) */
+    --color-primary: hsl(217, 91%, 50%); /* #296aca */
+    --color-primary-hover: hsl(217, 91%, 45%);
+    --color-primary-active: hsl(217, 91%, 40%);
+    --color-primary-light: hsl(217, 91%, 60%);
+    --color-primary-dark: hsl(217, 91%, 35%);
 
-    --color-text-dk: #011120;
-    --color-text-md: #102a43;
-    --color-text-lt: #475569;
-    --color-text-xlt: #9fb3c8;
+    /* Tons de Azul para Variações */
+    --color-blue-dk: hsl(217, 91%, 25%);
+    --color-blue-md: var(--color-primary);
+    --color-blue-lt: hsl(217, 91%, 70%);
 
-    --color-border-dk: #0a1a2f;
-    --color-border-md: #9fb3c8;
-    --color-border-lt: #eef2f7;
+    /* Cinzas Neutros para Contraste */
+    --color-neutral-50: hsl(217, 10%, 98%);
+    --color-neutral-100: hsl(217, 10%, 95%);
+    --color-neutral-200: hsl(217, 10%, 90%);
+    --color-neutral-300: hsl(217, 10%, 80%);
+    --color-neutral-400: hsl(217, 10%, 70%);
+    --color-neutral-500: hsl(217, 10%, 60%);
+    --color-neutral-600: hsl(217, 10%, 50%);
+    --color-neutral-700: hsl(217, 10%, 40%);
+    --color-neutral-800: hsl(217, 10%, 30%);
+    --color-neutral-900: hsl(217, 10%, 20%);
 
-    --color-accent-dk: #0b3f8d;
-    --color-accent-md: #296aca;
-    --color-accent-lt: #7cb1ff;
+    /* Cores Semânticas */
+    --color-success: hsl(142, 76%, 36%);
+    --color-warning: hsl(38, 92%, 50%);
+    --color-error: hsl(0, 79%, 63%);
 
-    /* Semantic tokens */
-    --surface-contrast: var(--color-black-md); /* nav e footer */
-    --surface-contrast-alt: var(--color-text-dk); /* nav e footer (não usado) */
-    --surface-page: var(--color-blue-dk); /* body */
-    --surface-page-alt: var(--color-blue-md); /* body */
-    --surface-section: var(--color-white-lt); /* section */
-    --surface-card: var(--color-white-lt); /* card */
-    --surface-card-alt: var(--color-white-md); /* card */
+    /* === Tema Claro === */
 
-    --text-heading: var(--color-blue-md);
-    --text-body: var(--color-text-md);
-    --text-muted: var(--color-text-lt);
-    --text-inverse: var(--color-white-lt);
-    --text-white: var(--color-white-lt);
-    --text-black: var(--color-black-dk);
+    /* Superfícies */
+    --surface-page: hsl(217, 91%, 15%); /* Fundo da página */
+    --surface-page-alt: hsl(217, 91%, 20%);
+    --surface-section: var(--color-neutral-50);
+    --surface-card: var(--color-neutral-100);
+    --surface-card-alt: var(--color-neutral-200);
+    --surface-contrast: var(--color-neutral-900); /* Nav e footer */
 
-    --gradient-card-start: var(--surface-card); /* remover */
-    --gradient-card-end: var(--surface-card-alt); /* remover */
-    --gradient-accent-start: var(--color-blue-md);
-    --gradient-accent-end: var(--color-blue-lt);
+    /* Textos */
+    --text-heading: var(--color-primary);
+    --text-body: var(--color-neutral-700);
+    --text-muted: var(--color-neutral-500);
+    --text-inverse: var(--color-neutral-50);
+    --text-white: var(--color-neutral-50);
+    --text-black: var(--color-neutral-900);
 
-    --button-ligth: var(--color-blue-md);
-    --button-ligth-hover: var(--color-white-lt);
-    --button-text-color: var(--color-white-lt);
-    --button-text-color-hover: var(--color-blue-md);
+    /* Bordas */
+    --color-border-dk: var(--color-neutral-300);
+    --color-border-md: var(--color-neutral-400);
+    --color-border-lt: var(--color-neutral-200);
+    --border-dark-tema: transparent;
 
-    --project-deploy-btn-color: var(--color-black-dk);
-    --project-repo-btn-color: var(--color-blue-md);
-    
-    /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
-    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
-    --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.25);
-    --text-shadow-sm: 0 1px 2px rgba(13, 17, 23, 0.12);
-    --text-shadow-md: 0 2px 6px rgba(13, 17, 23, 0.18);
-    --focus-ring: 0 0 0 3px rgba(31, 111, 235, 0.18);
-    --overlay-backdrop: rgba(13, 17, 23, 0.72);
-    --decorative-blob: rgba(31, 111, 235, 0.12);
+    /* Accent (usado para destaques) */
+    --color-accent: var(--color-primary);
+    --color-accent-hover: var(--color-primary-hover);
+    --color-accent-light: var(--color-primary-light);
+
+    /* Botões */
+    --button-primary-bg: var(--color-primary);
+    --button-primary-text: var(--color-neutral-50);
+    --button-primary-hover-bg: var(--color-neutral-50);
+    --button-primary-hover-text: var(--color-black-dk);
+
+    /* Sombras */
+    --shadow-sm: 0 1px 3px hsla(217, 91%, 20%, 0.1);
+    --shadow-md: 0 4px 6px hsla(217, 91%, 20%, 0.15);
+    --shadow-lg: 0 8px 16px hsla(217, 91%, 20%, 0.2);
+    --shadow-xl: 0 12px 24px hsla(217, 91%, 20%, 0.25);
+    --text-shadow-sm: 0 1px 2px hsla(217, 91%, 20%, 0.12);
+    --text-shadow-md: 0 2px 6px hsla(217, 91%, 20%, 0.18);
+    --focus-ring: 0 0 0 3px hsla(217, 91%, 50%, 0.18);
+    --overlay-backdrop: hsla(215, 10%, 23%, 0.829);
+    --decorative-blob: hsla(217, 91%, 50%, 0.12);
+
+    /* Elementos Específicos */
+    --vignette-bg: var(--color-blue-dk);
+    --toggle-light-bg: var(--color-primary-light);
+    --toggle-dark-bg: var(--color-neutral-800);
+    --lang-toggle-bg: var(--color-neutral-800);
+    --lang-toggle-border: var(--color-neutral-200);
+    --lang-toggle-text: var(--color-neutral-900);
+
+    /* Projetos */
+    --project-deploy-btn-color: var(--color-neutral-900);
+    --project-repo-btn-color: var(--color-primary);
+    --project-btn-text: var(--color-neutral-50);
+
+    /* Gradientes para projetos */
+    --project-gradient-a: var(--color-primary-light);
+    --project-gradient-b: var(--color-primary);
+    --project-gradient-c: var(--color-primary-dark);
+
+    /* Timeline Track*/
+    --timeline-track-color: var(--color-primary);
+    --timeline-track-color-end: var(--color-primary-light);
+
+    /* Direct Link */
+    --direct-link-color: var(--color-accent);
+    --direct-link-color-hover: var(--color-primary);
 }
 
-/* Tema Escuro */
+/* === BASE STYLES - DARK THEME === */
 [data-tema="dark"] {
-    /* ============================================================
-        Tema Escuro
-    ============================================================ */
+    --blue-dark: #314663;
+    --blue-semi-dark: #274c84;
+    /* === Tema Escuro === */
 
-    /* Colors - Professional Palette */
-    --color-blue-dk: #0a1018;
-    --color-blue-md: #234a7c;
-    --color-blue-lt: #1f6feb;
+    /* Superfícies */
+    --surface-page: var(--color-neutral-900); /* Fundo da página */
+    --surface-page-alt: var(--color-neutral-800);
+    --surface-section: var(--color-neutral-800);
+    --surface-card: var(--color-neutral-800);
+    --surface-card-alt: var(--color-neutral-600);
+    --surface-contrast: var(--color-neutral-900); /* Nav e footer */
 
-    --color-text-dk: #6b7280;
-    --color-text-md: #9aa4b2;
-    --color-text-lt: #e6edf3;
-    --color-text-xlt: #ffffff;
+    /* Textos */
+    --text-heading: var(--text-white);
+    --text-body: var(--color-neutral-300);
+    --text-muted: var(--color-neutral-400);
+    --text-inverse: var(--color-neutral-50);
+    --text-white: var(--color-neutral-50);
+    --text-black: var(--color-neutral-900);
 
-    --color-border-dk: #0a1a2f;
-    --color-border-md: #9fb3c8;
-    --color-border-lt: #eef2f7;
+    /* Bordas */
+    --color-border-dk: var(--color-neutral-600);
+    --color-border-md: var(--color-neutral-500);
+    --color-border-lt: var(--color-neutral-700);
+    --border-dark-tema: var(--color-neutral-500);
 
-    --color-accent-dk: #078194;
-    --color-accent-md: #22d3ee;
-    --color-accent-lt: #90f0ff;
+    /* Accent (usado para destaques) */
+    --color-accent: var(--blue-dark);
+    --color-accent-hover: var(--color-primary);
+    --color-accent-light: var(--color-primary-light);
 
-    /* Semantic tokens */
-    --surface-contrast: var(--color-black-md);  /* nav e footer */
-    --surface-contrast-alt: var(--color-text-dk);  /* nav e footer (não usado) */
-    --surface-page: var(--color-blue-dk); /* body */
-    --surface-page-alt: var(--color-blue-md); /* body */
-    --surface-section: var(--color-gray-dk); /* section */
-    --surface-card: var(--color-white-lt);  /* card */
-    --surface-card-alt: var(--color-white-md);  /* card */
+    /* Botões */
+    --button-primary-bg: var(--color-neutral-800);
+    --button-primary-text: var(--color-neutral-50);
+    --button-primary-hover-bg: var(--color-neutral-100);
+    --button-primary-hover-text: var(--color-black-dk);
 
-    --text-heading: var(--color-text-lt);
-    --text-body: var(--color-text-md);
-    --text-muted: var(--color-text-lt);
-    --text-inverse: var(--color-white-lt);
-    --text-white: var(--color-white-lt);
-    --text-black: var(--color-black-dk);
+    /* Sombras */
+    --shadow-sm: 0 1px 3px hsla(217, 91%, 10%, 0.4);
+    --shadow-md: 0 4px 6px hsla(217, 91%, 10%, 0.5);
+    --shadow-lg: 0 8px 16px hsla(217, 91%, 10%, 0.6);
+    --shadow-xl: 0 12px 24px hsla(217, 91%, 10%, 0.7);
+    --text-shadow-sm: 0 1px 2px hsla(217, 91%, 10%, 0.15);
+    --text-shadow-md: 0 2px 6px hsla(217, 91%, 10%, 0.25);
+    --focus-ring: 0 0 0 3px hsla(217, 91%, 60%, 0.18);
+    --overlay-backdrop: hsla(217, 91%, 10%, 0.72);
+    --decorative-blob: hsla(217, 91%, 60%, 0.12);
 
-    --gradient-card-start: var(--surface-card); /* remover */
-    --gradient-card-end: var(--surface-card-alt); /* remover */
-    --gradient-accent-start: var(--color-blue-md);
-    --gradient-accent-end: var(--color-blue-lt);
+    /* Elementos Específicos */
+    --vignette-bg: var(--color-neutral-800);
+    --toggle-light-bg: var(--color-primary);
+    --toggle-dark-bg: var(--color-neutral-700);
+    --lang-toggle-bg: var(--color-neutral-700);
+    --lang-toggle-border: var(--color-neutral-600);
+    --lang-toggle-text: var(--color-neutral-900);
 
-    --button-ligth: var(--color-blue-md);
-    --button-ligth-hover: var(--color-white-lt);
-    --button-text-color: var(--color-white-lt);
-    --button-text-color-hover: var(--color-blue-md);
+    /* Projetos */
+    --project-deploy-btn-color: var(--color-neutral-900);
+    --project-repo-btn-color: var(--blue-dark);
+    --project-btn-text: var(--color-white);
 
-    --project-deploy-btn-color: var(--color-black-dk);
-    --project-repo-btn-color: var(--color-blue-md);
+    /* Gradientes para projetos */
+    --project-gradient-a: var(--color-primary-dark);
+    --project-gradient-b: var(--color-primary);
+    --project-gradient-c: var(--color-primary-light);
 
-    /* Shadow */
-    --shadow-sm: 0 1px 3px rgba(34, 211, 238, 0.4);
-    --shadow-md: 0 4px 6px rgba(34, 211, 238, 0.5);
-    --shadow-lg: 0 8px 16px rgba(34, 211, 238, 0.6);
-    --shadow-xl: 0 12px 24px rgba(34, 211, 238, 0.7);
-    --text-shadow-sm: 0 1px 2px rgba(34, 211, 238, 0.15);
-    --text-shadow-md: 0 2px 6px rgba(34, 211, 238, 0.25);
-    --focus-ring: 0 0 0 3px rgba(34, 211, 238, 0.18);
-    --overlay-backdrop: rgba(34, 211, 238, 0.72);
-    --decorative-blob: rgba(34, 211, 238, 0.12);
+    /* Timeline Track*/
+    --timeline-track-color: var(--blue-semi-dark);
+    --timeline-track-color-end: var(--blue-semi-dark);
+    
+    /* Direct Link */
+    --direct-link-color: var(--color-white-dk);
+    --direct-link-color-hover: var(--text-white);
 }
 
 /* CSS Reset */
@@ -267,22 +316,22 @@ h5 { font-size: var(--font-size-lg); }
 h6 { font-size: var(--font-size-base); }
 
 p {
-    margin-bottom: var(--space-dk);
+    margin-bottom: var(--space-sm);
     color: var(--text-body);
 }
 
 a {
-    color: var(--color-accent-dk);
+    color: var(--color-accent);
     text-decoration: none;
     transition: color var(--transition-base);
 }
 
 a:hover {
-    color: var(--color-accent-lt);
+    color: var(--color-accent-hover);
 }
 
 a:focus {
-    outline: 2px solid var(--color-accent-md);
+    outline: 2px solid var(--color-accent);
     outline-offset: 2px;
 }
 
