@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo circular -->
+  <circle cx="64" cy="64" r="64" fill="#FF5A4F"></circle>
+
+  <!-- Envelope -->
+  <rect x="28" y="40" width="72" height="48" rx="4" ry="4" fill="#FFFFFF"></rect>
+  
+  <!-- Aba do envelope -->
+  <path d="M28 44 L64 70 L100 44" fill="none" stroke="#FF5A4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

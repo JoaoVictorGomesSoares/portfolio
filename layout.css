@@ -138,7 +138,7 @@ nav a:hover {
     font-weight: var(--font-weight-bold);
     border-radius: var(--radius-full);
     /* Define a imagem de fundo */
-    background-image: url('assets/pt-bg-btn.jpg'); 
+    background-image: url('assets/pt-bg-btn.webp'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -153,7 +153,7 @@ nav a:hover {
 }
 
 #lang-toggle.exchanged {
-    background-image: url('assets/en-bg-btn.jpg');
+    background-image: url('assets/en-bg-btn.webp');
 }
 
 /* Botão Tema */
@@ -632,15 +632,9 @@ Seção Sobre
 }
 
 @keyframes avatarFade {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /*=======================================================
@@ -1171,7 +1165,8 @@ Seção Contato
 }
 
 .contact-card-icon {
-    background-color: var(--color-white-lt);
+    background-color: transparent;
+    background-size: cover;
     border-radius: 999px;
     width: 60px;
     margin-bottom: 1rem;

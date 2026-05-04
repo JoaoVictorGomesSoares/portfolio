@@ -1,3 +1,5 @@
+import { assets } from './assets.js';
+
 /* === CONFIGURAÇÕES GLOBAIS DE IDIOMA E TEMA === */
 const DEFAULT_LOCALE = "pt-BR"; // Idioma padrão do site (fallback principal)
 const LOCALE_STORAGE_KEY = "portfolio-locale"; // Chave usada para salvar o idioma escolhido no localStorage
@@ -54,19 +56,19 @@ const projectsData = {
 
         // Caminhos das imagens exibidas no modal
         images: [
-            "assets/demands1.png",
-            "assets/demands2.png",
-            "assets/demands3.png",
-            "assets/demands4.png",
-            "assets/demands5.png",
-            "assets/demands6.png",
-            "assets/demands7.png"
+            "assets/projects/demands/demands1-modal-375w.webp",
+            "assets/projects/demands/demands2-modal-375w.webp",
+            "assets/projects/demands/demands3-modal-375w.webp",
+            "assets/projects/demands/demands4-modal-375w.webp",
+            "assets/projects/demands/demands5-modal-375w.webp",
+            "assets/projects/demands/demands6-modal-375w.webp",
+            "assets/projects/demands/demands7-modal-375w.webp"
         ],
 
         // Links externos relacionados ao projeto
         links: {
-            deploy: null, // Pode ser null quando não houver deploy
-            repo: "https://github.com/JoaoVictorGomesSoares/DevTrack"
+            deploy: "Em desenvolvimento", // Não manter null quando não houver deploy
+            repo: "https://github.com/JoaoVictorGomesSoares/Demands"
         }
     },
 
@@ -100,16 +102,16 @@ const projectsData = {
         purpose: "Criar uma plataforma de e-commerce completa e escalável.",
         technologies: ["Java", "Spring Boot", "HTML", "CSS", "JavaScript"],
         images: [
-            "assets/glasses1.png",
-            "assets/glasses2.png",
-            "assets/glasses3.png",
-            "assets/glasses4.png",
-            "assets/glasses5.png",
-            "assets/glasses6.png"
+            "assets/projects/glasses/glasses1-modal-375w.webp",
+            "assets/projects/glasses/glasses2-modal-375w.webp",
+            "assets/projects/glasses/glasses3-modal-375w.webp",
+            "assets/projects/glasses/glasses4-modal-375w.webp",
+            "assets/projects/glasses/glasses5-modal-375w.webp",
+            "assets/projects/glasses/glasses6-modal-375w.webp"
         ],
         links: {
-            deploy: null,
-            repo: "https://github.com/JoaoVictorGomesSoares"
+            deploy: "Em desenvolvimento",
+            repo: "https://github.com/JoaoVictorGomesSoares/Glassess"
         }
     },
     3: {
@@ -132,9 +134,9 @@ const projectsData = {
         specs: "Projeto em Java com foco em organização do código, lógica de jogo e estruturação de regras para uma experiência consistente.",
         purpose: "Criar uma experiência interativa e desafiadora com foco em lógica e diversão.",
         technologies: ["Java", "POO", "Lógica de Jogo"],
-        images: ["assets/WallpaperProject.png"],
+        images: ["assets/default-card-375w.webp"],
         links: {
-            deploy: null,
+            deploy: "Em Desenvolvimento",
             repo: "https://github.com/JoaoVictorGomesSoares"
         }
     },
@@ -160,7 +162,7 @@ const projectsData = {
         technologies: ["Java", "Spring Boot", "PostgreSQL", "JWT", "Spring Security"],
         images: ["assets/AUTH-SERVER-project-img.png"],
         links: {
-            deploy: null,
+            deploy: "Em Desenvolvimento",
             repo: "https://github.com/JoaoVictorGomesSoares"
         }
     },
@@ -186,7 +188,7 @@ const projectsData = {
         technologies: ["Spring Boot", "PostgreSQL", "JWT"],
         images: ["assets/CONTA-DIGITAL-project-img.png"],
         links: {
-            deploy: null,
+            deploy: "Em Desenvolvimento",
             repo: "https://github.com/JoaoVictorGomesSoares"
         }
     },
@@ -212,7 +214,7 @@ const projectsData = {
         technologies: ["Spring Boot", "Scheduler", "PostgreSQL", "Java Mail / SMTP"],
         images: ["assets/AGENDA-project-img.png"],
         links: {
-            deploy: null,
+            deploy: "Em Desenvolvimento",
             repo: "https://github.com/JoaoVictorGomesSoares"
         }
     },
@@ -238,7 +240,7 @@ const projectsData = {
         technologies: ["Spring Boot", "WebSocket", "PostgreSQL", "Redis", "JWT"],
         images: ["assets/CHATREPETECO-project-img.png"],
         links: {
-            deploy: null,
+            deploy: "Em Desenvolvimento",
             repo: "https://github.com/JoaoVictorGomesSoares"
         }
     },
@@ -264,7 +266,7 @@ const projectsData = {
         technologies: ["Spring Boot", "Docker", "RabbitMQ ou Kafka", "SMTP"],
         images: ["assets/NOTIFICA-project-img.png"],
         links: {
-            deploy: null,
+            deploy: "Em Desenvolvimento",
             repo: "https://github.com/JoaoVictorGomesSoares"
         }
     },
@@ -290,7 +292,7 @@ const projectsData = {
         technologies: ["Spring Boot", "PostgreSQL", "JWT", "Auditoria"],
         images: ["assets/AUDITORIA-project-img.png"],
         links: {
-            deploy: null,
+            deploy: "Em Desenvolvimento",
             repo: "https://github.com/JoaoVictorGomesSoares"
         }
     }
@@ -482,10 +484,10 @@ const expandButtonFallbacks = {
    Lista de imagens usadas no switcher de avatar.
 */
 const avatarSources = [
-    "assets/avatar1.png",
-    "assets/avatar2.png",
-    "assets/avatar3.png",
-    "assets/avatar4.png"
+    "assets/avatar1-about-750w.webp",
+    "assets/avatar2-about-750w.webp",
+    "assets/avatar3-about-750w.webp",
+    "assets/avatar4-about-750w.webp"
 ];
 
 
@@ -569,6 +571,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     initializeHoverDimming(".timeline-horizontal", ".timeline-preview");
     initializeHoverDimming(".contact-card-grid", ".contact-card");
     initializeModalControls();
+
+    /* --- SETAR ASSETS --- */
+    setAssets();
 
     /* --- 3 RESTAURAÇÃO DOS TEXTOS PADRÃO ---
         Garante que o site comece com o idioma base antes de aplicar qualquer tradução externa.
@@ -1277,25 +1282,26 @@ function openProjectModal(projectId) {
     const imagesContainer = document.getElementById("project-modal-images");
     imagesContainer.innerHTML = "";
 
-    data.images.forEach((imagePath) => {
-        // Caso especial: imagem placeholder
-        if (imagePath.includes("WallpaperProject.png")) {
-            const placeholder = document.createElement("div");
-            placeholder.className = "modal-placeholder";
-            placeholder.textContent = getTranslation(
-                "projects.modal.imagePlaceholder",
-                "Imagem em atualização"
-            );
-            imagesContainer.appendChild(placeholder);
-            return;
-        }
-
-        // Cria imagem real do projeto
+    // Usar assets para imagens
+    const projectAssets = assets.images.projects[data.name.toLowerCase()];
+    if (projectAssets && projectAssets.modals) {
+      projectAssets.modals.forEach((modal) => {
+        const image = document.createElement("img");
+        image.src = modal.small;
+        image.srcset = generateSrcset(modal);
+        image.sizes = "(max-width: 768px) 375px, 375px"; // Exemplo
+        image.alt = data.name;
+        imagesContainer.appendChild(image);
+      });
+    } else {
+      // Fallback para data.images se existir
+      (data.images || []).forEach((imagePath) => {
         const image = document.createElement("img");
         image.src = imagePath;
         image.alt = data.name;
         imagesContainer.appendChild(image);
-    });
+      });
+    }
 
     updateModalLink("project-modal-deploy-link", data.links && data.links.deploy); // Atualiza links externos (deploy e repositório)
     updateModalLink("project-modal-repo-link", data.links && data.links.repo);
@@ -1583,4 +1589,39 @@ function mergeLocalizedData(baseValue, translatedValue) {
 /* === VERIFICA OBJETO SIMPLES === */
 function isPlainObject(value) {
     return Object.prototype.toString.call(value) === "[object Object]";
+}
+
+/* === GERAR SRCSET === */
+function generateSrcset(resolutions) {
+  return Object.entries(resolutions).map(([key, path]) => {
+    const width = path.match(/-(\d+)w\./)?.[1];
+    return width ? `${path} ${width}w` : path;
+  }).join(', ');
+}
+
+/* === SETAR ASSETS NO DOM === */
+function setAssets() {
+  // Setar ícones
+  document.querySelectorAll('.tech-img').forEach(img => {
+    const iconName = img.dataset.icon;
+    const icon = assets.icons.find(i => i.name === iconName);
+    if (icon) {
+      img.src = icon.path;
+    }
+  });
+
+  // Setar cards de projetos
+  const demandsCard = document.getElementById('demands-card-img');
+  if (demandsCard) {
+    demandsCard.src = assets.images.projects.demands.card.small;
+    demandsCard.srcset = generateSrcset(assets.images.projects.demands.card);
+    demandsCard.sizes = "(max-width: 768px) 450px, 450px"; // Exemplo
+  }
+
+  const glassesCard = document.getElementById('glasses-card-img');
+  if (glassesCard) {
+    glassesCard.src = assets.images.projects.glasses.card.small;
+    glassesCard.srcset = generateSrcset(assets.images.projects.glasses.card);
+    glassesCard.sizes = "(max-width: 768px) 450px, 450px";
+  }
 }
