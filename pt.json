@@ -4,12 +4,12 @@
     "lang": "pt-BR"
   },
   "languageToggle": {
-    "buttonText": "🌐 pt-BR",
+    "buttonText": "Idioma",
     "ariaLabel": "Alterar idioma para inglês"
   },
   "themeToggle": {
-    "enableDark": "Ativar modo escuro",
-    "enableLight": "Ativar modo claro"
+    "enableDark": "Modo claro",
+    "enableLight": "Modo escuro"
   },
   "nav": {
     "home": "Início",
@@ -19,7 +19,10 @@
     "education": "Educação",
     "experience": "Experiências",
     "contact": "Contato",
-    "resume": "Acessar Currículo Virtual"
+    "resume": "Acessar Currículo Virtual",
+    "selectLanguage": "Selecione a Linguagem",
+    "langOptionPtBr": "Português (BR)",
+    "langOptionEnUs": "English (USA)"
   },
   "hero": {
     "title": "Programador Java | Spring Boot",
@@ -43,7 +46,7 @@
         "title": "Currículo"
       }
     },
-    "techHeading": "Principais Tecnologias",
+    "techHeading": "Linguagens e Tecnologias",
     "tech": {
       "ai": "Inteligências Artificiais",
       "aiShort": "I.A.",
@@ -81,7 +84,7 @@
         "title": "Ver projeto em produção"
       },
       "repo": {
-        "label": "Ver repositório",
+        "label": "Repositório",
         "title": "Ver repositório no GitHub"
       }
     },
@@ -338,55 +341,66 @@
     "mainHeading": "Principais Stacks",
     "otherHeading": "Outras Stacks",
     "softHeading": "Soft Skills",
-    "experienceLabel": "possuo 1,5 anos de experiência com essa tecnologia",
     "items": {
       "java": {
         "name": "Java",
-        "description": "Linguagem de programação orientada a objetos"
+        "description": "Linguagem de programação orientada a objetos",
+        "experienceLabel": "possuo 2 anos de experiência com essa tecnologia"
       },
       "springBoot": {
         "name": "Spring Boot",
-        "description": "Framework para desenvolvimento de aplicações Java"
+        "description": "Framework para desenvolvimento de aplicações Java",
+        "experienceLabel": "possuo 2 anos de experiência com essa tecnologia"
       },
       "git": {
         "name": "Git",
-        "description": "Sistema de controle de versão distribuído"
+        "description": "Sistema de controle de versão distribuído",
+        "experienceLabel": "possuo 2 anos de experiência com essa tecnologia"
       },
       "mysql": {
         "name": "MySQL",
-        "description": "Sistema de gerenciamento de banco de dados"
+        "description": "Sistema de gerenciamento de banco de dados",
+        "experienceLabel": "possuo 6 meses de experiência com essa tecnologia"
       },
       "cpp": {
         "name": "C++",
-        "description": "Linguagem de programação de baixo nível"
+        "description": "Linguagem de programação de baixo nível",
+        "experienceLabel": "possuo 6 meses de experiência com essa tecnologia"
       },
       "python": {
         "name": "Python",
-        "description": "Linguagem de programação interpretada"
+        "description": "Linguagem de programação interpretada",
+        "experienceLabel": "possuo 6 meses de experiência com essa tecnologia"
       },
       "typeScript": {
         "name": "TypeScript",
-        "description": "Linguagem de programação orientada a objetos"
+        "description": "Linguagem de programação orientada a objetos",
+        "experienceLabel": "possuo 6 meses de experiência com essa tecnologia"
       },
       "javaScript": {
         "name": "JavaScript",
-        "description": "Linguagem de programação interpretada"
+        "description": "Linguagem de programação interpretada",
+        "experienceLabel": "possuo 3 anos de experiência com essa tecnologia"
       },
       "html": {
         "name": "HTML",
-        "description": "Linguagem de marcação para criação de páginas web"
+        "description": "Linguagem de marcação para criação de páginas web",
+        "experienceLabel": "possuo 3 anos de experiência com essa tecnologia"
       },
       "css": {
         "name": "CSS",
-        "description": "Linguagem de estilo para definição da apresentação de páginas web"
+        "description": "Linguagem de estilo para definição da apresentação de páginas web",
+        "experienceLabel": "possuo 3 anos de experiência com essa tecnologia"
       },
       "ai": {
         "name": "I.A.",
-        "description": "Inteligência Artificial"
+        "description": "Inteligência Artificial",
+        "experienceLabel": "possuo 6 meses de experiência com essa tecnologia"
       },
       "linux": {
         "name": "Linux",
-        "description": "Sistema operacional de código aberto"
+        "description": "Sistema operacional de código aberto",
+        "experienceLabel": "possuo 5 anos de experiência com essa tecnologia"
       }
     },
     "softItems": {
@@ -441,7 +455,7 @@
     "items": {
       "1": {
         "title": "Bacharelado em Ciência da Computação",
-        "institution": "📚 Universidade Federal Fluminense (UFF)",
+        "institution": "Universidade Federal Fluminense (UFF)",
         "period": "2026 - 2030",
         "cardDescription": "Formação completa em Ciência da Computação com ênfase em desenvolvimento de software, algoritmos, estruturas de dados e engenharia de software.",
         "modalDescription": "Formação completa em Ciência da Computação com foco em desenvolvimento de software, algoritmos, estruturas de dados, banco de dados e engenharia de software.",
@@ -457,7 +471,7 @@
       },
       "2": {
         "title": "Spring Boot Essentials",
-        "institution": "📖 Udemy",
+        "institution": "Harvard",
         "period": "2024",
         "cardDescription": "Certificação em desenvolvimento com Spring Boot, cobrindo REST APIs, JPA, Hibernate e padrões de design.",
         "modalDescription": "Formação prática em Spring Boot cobrindo APIs REST, injeção de dependência, persistência com JPA/Hibernate e boas práticas para aplicações Java modernas.",
@@ -471,7 +485,7 @@
       },
       "3": {
         "title": "Java Advanced Programming",
-        "institution": "📖 Alura",
+        "institution": "Instituto Tecnológico de Aeronáutica (ITA)",
         "period": "2023",
         "cardDescription": "Certificação avançada em Java, explorando programação orientada a objetos, collections, streams e multithreading.",
         "modalDescription": "Estudo aprofundado em Java com foco em programação orientada a objetos, coleções, streams, concorrência e construção de código mais robusto.",
@@ -621,6 +635,6 @@
     "footerNote": "Atendimento aberto para freelancers, projetos autorais, colaborações e oportunidades profissionais."
   },
   "footer": {
-    "copyright": "© 2026 João Victor. Todos os direitos reservados."
+    "copyright": "© 2026 João Victor."
   }
 }

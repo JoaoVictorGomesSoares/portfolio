@@ -4,6 +4,20 @@ Este changelog registra a linha de base documental do projeto a partir do estado
 
 O formato segue uma abordagem simples inspirada em Keep a Changelog.
 
+## [1.0.2] - 2026-05-13
+
+### Corrigido
+
+- Atualizado o texto visível do botão de tema para alternar corretamente entre claro/escuro.
+- Garantida a atualização dinâmica do label do botão de tema também ao trocar o idioma.
+- Ajustado o layout do seletor de idioma para que `.lang-text` ocupe a maior parte do botão e `.lang-code` use apenas o espaço necessário.
+- Sincronizada a documentação com os arquivos reais presentes em `docs/`.
+
+### Documentado
+
+- Correções no comportamento de UI do tema e do seletor de idioma.
+- Alinhamento do `README.md` e `docs/` com a estrutura atual de arquivos.
+
 ## [1.0.1] - 2026-05-04
 
 ### Atualizado
@@ -13,8 +27,8 @@ O formato segue uma abordagem simples inspirada em Keep a Changelog.
 - `docs/structure.md` atualizado com separação clara de `base.css` e `layout.css` e organização de pastas.
 - `docs/decisions.md` incluído justificativa técnica para JavaScript puro, ausência de framework e modelo de dados.
 - `docs/future-improvements.md` detalhado com testes automatizados, otimização de imagens e i18n.
-- `docs/guia-desenvolvimento.md` reorganizado para fluxo de manutenção e validação mínima.
-- `docs/estrutura-projeto.md` ajustado para refletir responsabilidade de arquivos e lógica de organização.
+- `docs/decisions.md` também documenta o fluxo de manutenção e boas práticas.
+- `docs/structure.md` ajustado para refletir responsabilidade de arquivos e lógica de organização.
 
 ### Documentado
 
@@ -32,10 +46,10 @@ O formato segue uma abordagem simples inspirada em Keep a Changelog.
 ### Adicionado
 
 - `README.md` com visão geral do projeto, tecnologias, estrutura e links para a documentação.
-- `docs/inicio-rapido.md` com instruções de execução local.
-- `docs/guia-desenvolvimento.md` com orientações de manutenção e evolução.
-- `docs/estrutura-projeto.md` com o mapeamento dos arquivos e responsabilidades.
-- `docs/entrega-final.md` com o consolidado da entrega do repositório.
+- `docs/overview.md` com instruções de visão geral e propósito do projeto.
+- `docs/decisions.md` com orientações de manutenção, decisões técnicas e modelo de dados.
+- `docs/structure.md` com o mapeamento dos arquivos e responsabilidades.
+- `docs/changelog.md` com o registro de mudanças.
 - `docs/resumo-mudancas.md` com o resumo objetivo das mudanças feitas nesta etapa.
 
 ### Documentado

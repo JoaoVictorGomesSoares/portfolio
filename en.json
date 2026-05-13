@@ -4,12 +4,12 @@
     "lang": "en-US"
   },
   "languageToggle": {
-    "buttonText": "🌐 en-US",
+    "buttonText": "Language",
     "ariaLabel": "Switch language to Portuguese"
   },
   "themeToggle": {
-    "enableDark": "Enable dark mode",
-    "enableLight": "Enable light mode"
+    "enableDark": "Light mode",
+    "enableLight": "Dark mode"
   },
   "nav": {
     "home": "Home",
@@ -19,7 +19,10 @@
     "education": "Education",
     "experience": "Experience",
     "contact": "Contact",
-    "resume": "Open Resume"
+    "resume": "Open Resume",
+    "selectLanguage": "Select Language",
+    "langOptionPtBr": "Português (BR)",
+    "langOptionEnUs": "English (USA)"
   },
   "hero": {
     "title": "Java Developer | Spring Boot",
@@ -43,7 +46,7 @@
         "title": "Resume"
       }
     },
-    "techHeading": "Core Technologies",
+    "techHeading": "Languages and Technologies",
     "tech": {
       "ai": "Artificial Intelligence",
       "aiShort": "AI",
@@ -81,7 +84,7 @@
         "title": "View live project"
       },
       "repo": {
-        "label": "View repository",
+        "label": "Repository",
         "title": "View repository on GitHub"
       }
     },
@@ -338,55 +341,66 @@
     "mainHeading": "Core Stack",
     "otherHeading": "Other Stacks",
     "softHeading": "Soft Skills",
-    "experienceLabel": "I have 1.5 years of experience with this technology",
     "items": {
       "java": {
         "name": "Java",
-        "description": "Object-oriented programming language"
+        "description": "Object-oriented programming language",
+        "experienceLabel": "I have 2 years of experience with this technology"
       },
       "springBoot": {
         "name": "Spring Boot",
-        "description": "Framework for building Java applications"
+        "description": "Framework for building Java applications",
+        "experienceLabel": "I have 2 years of experience with this technology"
       },
       "git": {
         "name": "Git",
-        "description": "Distributed version control system"
+        "description": "Distributed version control system",
+        "experienceLabel": "I have 2 years of experience with this technology"
       },
       "mysql": {
         "name": "MySQL",
-        "description": "Database management system"
+        "description": "Database management system",
+        "experienceLabel": "I have 6 mouths of experience with this technology"
       },
       "cpp": {
         "name": "C++",
-        "description": "Low-level programming language"
+        "description": "Low-level programming language",
+        "experienceLabel": "I have 6 mouths of experience with this technology"
       },
       "python": {
         "name": "Python",
-        "description": "Interpreted programming language"
+        "description": "Interpreted programming language",
+        "experienceLabel": "I have 6 mouths of experience with this technology"
       },
       "typeScript": {
         "name": "TypeScript",
-        "description": "Object-oriented programming language"
+        "description": "Object-oriented programming language",
+        "experienceLabel": "I have 6 mouths of experience with this technology"
       },
       "javaScript": {
         "name": "JavaScript",
-        "description": "Interpreted programming language"
+        "description": "Interpreted programming language",
+        "experienceLabel": "I have 3 years of experience with this technology"
       },
       "html": {
         "name": "HTML",
-        "description": "Markup language for building web pages"
+        "description": "Markup language for building web pages",
+        "experienceLabel": "I have 3 years of experience with this technology"
       },
       "css": {
         "name": "CSS",
-        "description": "Style language for defining web page presentation"
+        "description": "Style language for defining web page presentation",
+        "experienceLabel": "I have 3 years of experience with this technology"
       },
       "ai": {
         "name": "AI",
-        "description": "Artificial Intelligence"
+        "description": "Artificial Intelligence",
+        "experienceLabel": "I have 6 mouths of experience with this technology"
       },
       "linux": {
         "name": "Linux",
-        "description": "Open-source operating system"
+        "description": "Open-source operating system",
+        "experienceLabel": "I have 5 years of experience with this technology"
       }
     },
     "softItems": {
@@ -441,7 +455,7 @@
     "items": {
       "1": {
         "title": "Bachelor's Degree in Computer Science",
-        "institution": "📚 Federal Fluminense University (UFF)",
+        "institution": "Universidade Federal Fluminense (UFF)",
         "period": "2026 - 2030",
         "cardDescription": "Complete degree in Computer Science with emphasis on software development, algorithms, data structures, and software engineering.",
         "modalDescription": "Complete degree in Computer Science focused on software development, algorithms, data structures, databases, and software engineering.",
@@ -457,7 +471,7 @@
       },
       "2": {
         "title": "Spring Boot Essentials",
-        "institution": "📖 Udemy",
+        "institution": "Harvard",
         "period": "2024",
         "cardDescription": "Certification in Spring Boot development covering REST APIs, JPA, Hibernate, and design patterns.",
         "modalDescription": "Hands-on training in Spring Boot covering REST APIs, dependency injection, persistence with JPA/Hibernate, and best practices for modern Java applications.",
@@ -471,7 +485,7 @@
       },
       "3": {
         "title": "Java Advanced Programming",
-        "institution": "📖 Alura",
+        "institution": "Instituto Tecnológico de Aeronáutica (ITA)",
         "period": "2023",
         "cardDescription": "Advanced Java certification exploring object-oriented programming, collections, streams, and multithreading.",
         "modalDescription": "In-depth Java study focused on object-oriented programming, collections, streams, concurrency, and more robust code design.",
@@ -621,6 +635,6 @@
     "footerNote": "Available for freelance work, independent projects, collaborations, and professional opportunities."
   },
   "footer": {
-    "copyright": "© 2026 João Victor. All rights reserved."
+    "copyright": "© 2026 João Victor."
   }
 }

@@ -2,34 +2,32 @@
 
 ## O que mudou
 
-Foi criada uma camada completa de documentação para o repositório do portfólio.
+A documentação foi alinhada com a estrutura atual do repositório e passou a refletir as alterações recentes no comportamento do tema e do seletor de idioma.
 
-## Arquivos adicionados
+## Arquivos documentados
 
 - `README.md`
-- `docs/inicio-rapido.md`
-- `docs/guia-desenvolvimento.md`
-- `docs/estrutura-projeto.md`
+- `docs/overview.md`
+- `docs/structure.md`
+- `docs/decisions.md`
+- `docs/future-improvements.md`
 - `docs/changelog.md`
-- `docs/entrega-final.md`
 - `docs/resumo-mudancas.md`
 
 ## Resultado prático
 
-Com essa atualização, o projeto passa a ter:
+Com essa atualização, o projeto agora tem:
 
-- apresentação inicial do repositório
-- orientação de execução local
-- referência de manutenção
-- mapeamento da estrutura de arquivos
-- registro formal da entrega
-- histórico inicial de mudanças documentadas
+- documentação consistente com os arquivos presentes em `docs/`
+- descrição clara das capacidades de tema e idioma
+- registro de correções recentes na UI e na tradução
+- referência de manutenção atualizada
 
 ## Impacto
 
-Essa documentação reduz dependência de contexto informal e deixa o repositório mais preparado para:
+Essa sincronização reduz inconsistências entre a documentação e o código, facilitando:
 
-- publicação
-- continuidade de desenvolvimento
-- revisão futura
-- compartilhamento com recrutadores, clientes ou colaboradores
+- revisão do projeto
+- continuidade do desenvolvimento
+- comunicação sobre as mudanças realizadas
+- uso correto das ferramentas de idioma e tema

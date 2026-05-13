@@ -28,16 +28,16 @@ Site estático pessoal em HTML5, CSS3 e JavaScript puro, desenvolvido para apres
 
 - `docs/overview.md`: visão geral do portfólio.
 - `docs/structure.md`: arquitetura de pastas e separação de CSS.
-- `docs/decisions.md`: decisões técnicas e justificativas.
+- `docs/decisions.md`: decisões técnicas, modelo de dados e fluxo de manutenção.
 - `docs/future-improvements.md`: melhorias planejadas.
-- `docs/guia-desenvolvimento.md`: fluxo de manutenção e regras de alteração.
-- `docs/estrutura-projeto.md`: visão da organização do repositório.
+- `docs/changelog.md`: registro de mudanças.
+- `docs/resumo-mudancas.md`: resumo das atualizações de documentação.
 
 ## Observações
 
 - Projeto estático sem pipeline de build.
 - Dados de cards e modais centralizados em `script.js`.
-- Idioma e tema persistem no `localStorage`.
+- O botão de tema e o seletor de idioma atualizam seus labels dinamicamente e persistem a preferência em `localStorage`.
 - Não há dependência de frameworks externos.
 
 ## Recomendações
